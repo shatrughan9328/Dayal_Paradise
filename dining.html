@@ -3,359 +3,435 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dinining</title>
+    <title>Aadab Dining & Jannat Rooftop Bar | Hotel Dayal Paradise Lucknow</title>
+    <meta
+      name="description"
+      content="Savor royal Awadhi delicacies, Indian, and Continental cuisines at Aadab Multi-Cuisine Restaurant and Jannat Rooftop Bar at Hotel Dayal Paradise, Gomti Nagar, Lucknow."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Browser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
-      integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Custom Luxury Design System -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <!-- top nav start -->
-    <div class="grid grid-cols-12 bg-blue-950 text-white text-sm">
-      <div
-        class="col-span-2 col-start-2 flex items-center justify-center gap-2 text-end my-4"
-      >
-        <i class="fa-solid fa-phone"></i> +91 8795838030
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#d4af37] selection:text-[#070c18]">
+    <!-- TOP NOTIFICATION & CONTACT BAR -->
+    <header class="royal-topbar text-xs text-slate-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+          <a href="tel:+918795838030" class="topbar-link">
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span class="font-medium">+91 8795838030</span>
+          </a>
+          <a href="https://maps.google.com/?q=Hotel+Dayal+Paradise+Gomti+Nagar+Lucknow" target="_blank" class="hidden md:flex topbar-link">
+            <i class="fa-solid fa-location-dot text-xs"></i>
+            <span>Vipul Khand-V, Gomti Nagar, Lucknow</span>
+          </a>
+          <a href="mailto:reservation@dayalparadise.com" class="hidden sm:flex topbar-link">
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span>reservation@dayalparadise.com</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-4 ml-auto">
+          <a href="#reserveTable" class="btn-royal-stay">
+            <i class="fa-solid fa-utensils text-[10px]"></i>
+            <span>Reserve Table</span>
+          </a>
+        </div>
       </div>
-      <div class="col-span-3 text-start gap-2 my-4">
-        <i class="fa-solid fa-location-dot"></i> Vipul Khand-V,Gomti Nagar,
-        Lucknow
-      </div>
-      <div class="col-span-2 gap-2 my-4">
-        <i class="fa-solid fa-envelope"></i> reservation@dayalparadise.com
-      </div>
-      <div class="col-span-3 text-center my-4 col-start-9">
-        <a href="#" class="bg-sky-100 text-blue-950 px-3 py-1"
-          >BOOK YOUR ROOM</a
-        >
-      </div>
-    </div>
-    <!-- top nav end -->
+    </header>
 
-    <!-- mid nav start  -->
-    <div class="grid grid-cols-12 sticky top-0 z-50 bg-slate-50">
-      <div class="col-span-12">
-        <nav class="bg-neutral-primary w-full z-20 top-0 start-0">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img src="./images/logo.png" class="h-15" alt="Flowbite Logo" />
-            </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                  d="M5 7h14M5 12h14M5 17h14"
-                />
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./aboutus.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >suite & rooms</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./dining.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Dining</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./b&l.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >banquets and lawn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./gallery.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >gallery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >contact us</a
-                  >
-                </li>
-              </ul>
+    <!-- STICKY LUXURY NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 luxury-navbar shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Royal Hotel Logo Badge -->
+          <a href="./index.html" class="royal-logo-badge group" title="Hotel Dayal Paradise">
+            <img src="./images/logo.png" alt="Hotel Dayal Paradise Logo" />
+          </a>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+            <a href="./index.html" class="luxury-nav-link">Home</a>
+            <a href="./aboutus.html" class="luxury-nav-link">About Us</a>
+            <a href="./index.html#rooms" class="luxury-nav-link">Suites & Rooms</a>
+            <a href="./dining.html" class="luxury-nav-link active">Dining</a>
+            <a href="./b&l.html" class="luxury-nav-link">Banquets & Lawn</a>
+            <a href="./aminities.html" class="luxury-nav-link">Amenities</a>
+            <a href="./gallery.html" class="luxury-nav-link">Gallery</a>
+            <a href="./index.html#contact" class="luxury-nav-link">Contact</a>
+          </div>
+
+          <!-- Table Reservation Desk -->
+          <div class="hidden xl:flex items-center pl-3">
+            <div class="royal-concierge-pill">
+              <div class="concierge-icon-circle">
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+              <div>
+                <p class="text-[9px] uppercase tracking-[0.18em] text-[#dfc07b] font-bold leading-none mb-1">Fine Dining Desk</p>
+                <a href="tel:+915224059999" class="text-xs font-bold text-white hover:text-[#fae9bd] transition-colors leading-none tracking-wide">
+                  +91 522 4059999
+                </a>
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-    <!-- mid nav end  -->
 
-    <!-- image section start -->
-    <div
-      class="grid grid-cols-12 bg-[url('./images/aminities.jpg')] w-full h-[200px] bg-cover bg-center bg-no-repeat"
-    >
-      <h1 class="text-white text-5xl absolute ml-40 mt-15">
-        Dining
-        <span class="inline-block w-12 border-b-2 border-lime-500"></span>
-      </h1>
-    </div>
-    <div class="grid grid-cols-12 shadow-lg py-5">
-      <div class="col-start-2 col-span-4 text-black flex items-center">
-        <a href="#">HOME</a>
-        <h1 class="ml-2">&gt; Dining</h1>
+          <!-- Mobile Hamburger Button -->
+          <button id="mobileMenuToggle" type="button" class="lg:hidden p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none" aria-label="Toggle menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl text-[#d4af37]"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <!-- image section end -->
 
-    <!-- content section start -->
-    <div class="grid grid-cols-12 gap-25">
-      <div class="col-span-4 col-start-2 mt-20">
-        <h1 class="text-3xl">Our Restaurant</h1>
-        <p class="mt-1">
-          Places for best experiences while having a meal.
-          <span class="inline-block w-16 border-b-3 border-lime-500"></span>
-        </p>
-        <h1 class="text-3xl mt-5">"AADAB" MULTI-CUISINE RESTAURANT & BAR</h1>
-        <p class="mt-5 leading-7">
-          Adab a Multi Cuisine Restaurant, with seating capacity of sixty covers
-          in a table combination of four each make a comfortable dining for the
-          Family, Couples and small gatherings. As the name suggest, the cozy
-          interiors of the Restaurant reflect the inherited culture of Lucknow.
-          Well located in plus green serenity of Gomti nagar, the Restaurant
-          offers the best of Indian, Chinese and Continental delicacies. Our
-          well trained staff makes dining experience a memorable one. Chefs from
-          different corner of the country serve you the best of delicacies
-          cooked to perfection taking care of Vegetarian and Non Vegetarian
-          preparations separately. Adab is the name to welcome you all to the
-          world of finest selection of dishes and best of services to make your
-          every visit a memorable one.
-        </p>
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden mobile-nav-drawer px-4 pt-3 pb-6 space-y-1.5">
+        <a href="./index.html" class="mobile-nav-link">Home</a>
+        <a href="./aboutus.html" class="mobile-nav-link">About Us</a>
+        <a href="./index.html#rooms" class="mobile-nav-link">Suites & Rooms</a>
+        <a href="./dining.html" class="mobile-nav-link active">Dining</a>
+        <a href="./b&l.html" class="mobile-nav-link">Banquets & Lawn</a>
+        <a href="./aminities.html" class="mobile-nav-link">Amenities</a>
+        <a href="./gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="./index.html#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-3 border-t border-[#d4af37]/20 mt-2">
+          <a href="#reserveTable" class="btn-royal-stay w-full justify-center py-2.5 text-xs">
+            <i class="fa-solid fa-utensils text-[10px]"></i>
+            <span>Reserve Table</span>
+          </a>
+        </div>
       </div>
-      <div class="col-span-6">
-        <img class="mt-40" src="./images/dining.jpg" alt="" />
+    </nav>
+
+    <!-- HERO BANNER -->
+    <section class="relative bg-[url('./images/dinner.jpg')] bg-cover bg-center h-[280px] sm:h-[340px] flex items-center justify-center text-white">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#070b19] via-[#070b19]/75 to-[#070b19]/50"></div>
+      <div class="relative z-10 text-center px-4 max-w-4xl">
+        <span class="text-[#e5c583] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">Royal Gastronomy</span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-bold mt-2 text-white">Dining & Culinary Excellence</h1>
+        <div class="gold-divider-center my-3"></div>
+        <div class="flex items-center justify-center gap-2 text-xs uppercase tracking-wider text-slate-300">
+          <a href="./index.html" class="hover:text-[#c5a059]">Home</a>
+          <span>/</span>
+          <span class="text-[#c5a059]">Dining</span>
+        </div>
       </div>
-    </div>
-    <!-- content section end -->
-    <!-- timing section start -->
-    <div class="grid grid-cols-12 mt-30">
-      <div class="col-span-10 col-start-2">
-        <h1 class="text-4xl">Timings</h1>
-        <p class="text-xl mt-1">
-          Breakfast, Lunch and Dinner Timings
-          <span class="inline-block w-12 border-b-2 border-lime-500"></span>
-        </p>
+    </section>
 
-        <!-- button start -->
-        <div class="grid grid-cols-12 mt-15 ">
-          <div class="col-span-7 gap-5 flex">
-            <a
-              href="#"
-              class="w-[600px] h-[82px] bg-[#f5f5f5] col-span-1 border border-gray-300 text-[24px] font-bold text-black uppercase flex items-center justify-center hover:bg-lime-200 transition duration-300"
-            >
-              Breakfast
-            </a>
-            <!-- lunch -->
-            <a
-              href="#"
-              class="w-[600px] h-[82px] bg-[#f5f5f5] col-span-1 border border-gray-300 text-[24px] font-bold text-black uppercase flex items-center justify-center hover:bg-lime-200 transition duration-300"
-            >
-              Lunch
-            </a>
-
-            <!-- dinner -->
-            <a
-              href="#"
-              class="w-[600px] h-[82px] bg-[#f5f5f5] border col-span-1 border-gray-300 text-[24px] font-bold text-black uppercase flex items-center justify-center hover:bg-lime-200 transition duration-300"
-            >
-              Dinner
-            </a>
+    <!-- SECTION 1: AADAB RESTAURANT -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">Lobby Level Experience</span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              "Aadab" Multi-Cuisine Restaurant & Bar
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 leading-relaxed font-light text-base mb-6">
+              Aadab is a sixty-cover fine dining haven located at the lobby level, styled in warm amber tones reflecting Lucknow's inherited royal Tehzeeb. Designed for families, couples, and intimate gatherings, it features four-seater comfortable seating arrangements with ambient lighting.
+            </p>
+            <p class="text-slate-600 leading-relaxed font-light text-base mb-6">
+              Our master chefs present the finest authentic Indian, royal Awadhi dum pukht delicacies, sizzlers, Chinese, and Continental menus with separate dedicated preparation kitchens for vegetarian and non-vegetarian fare.
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <span class="amenity-tag"><i class="fa-solid fa-leaf text-green-600"></i> Pure Veg Kitchen Available</span>
+              <span class="amenity-tag"><i class="fa-solid fa-wine-glass text-[#c5a059]"></i> Signature Bar</span>
+              <span class="amenity-tag"><i class="fa-solid fa-users text-[#c5a059]"></i> 60 Covers</span>
+            </div>
+          </div>
+          <div class="lg:col-span-6">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="./images/dining.jpg" alt="Aadab Restaurant Dining Hall" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
           </div>
         </div>
-        <!-- button end -->
-
-        <!-- image start -->
-         <div class="grid grid-cols-12 mt-10 border border-gray-300 p-8">
-            <div class="col-span-11 col-start-1">
-                <img class="w-full h-auto " src="./images/dinner.jpg" alt="">
-                <p class="mt-3 font-semibold border-b border-gray-300 pb-6">Dinner is served from 7:30pM to 11:30PM at AADAAB and from 6pm to 11:30pm at JANNAT</p>
-                
-           
-            
-            
-            <div class="col-span-11 col-start-1  border-b border-gray-300 py-5">
-                <h1 class="text-xl font-medium">"AADAB" MULTI-CUISINE RESTAURANT & BAR</h1>
-                <p>Location : Lobby level</p>
-            </div>
-             
-         </div>
-         
-
-         <div class="col-span-11 col-start-1 border-b border-gray-300 py-5">
-                <h1 class="text-xl font-medium">"JANNAT" ROOF-TOP RESTAURANT & BAR</h1>
-                <p>Location : Roof Top</p>
-            </div>
-             </div>
-         </div>
-        
-        <!-- image end -->
       </div>
-    </div>
-    <!-- timing section end -->
-    <!-- image content start -->
-     <div class="grid grid-cols-12 mt-15 gap-10 mb-30">
-        <div class="col-span-5 col-start-2">
-            <img src="./images/Copy.jpg" alt="">
-        </div>
-        <div class="col-span-5">
-            <h1 class="text-3xl">"JANNAT" ROOF-TOP RESTAURANT & BAR</h1>
-            <p class="mt-5 leading-7">High above the city, the Rooftop Outdoor Restaurant & Bar embraces the fresh Lucknow breeze, while offering a magnificent view of the City. There can hardly be a better milieu anywhere in the world for delectable food, pleasant music and casual al fresco dining. With a large and varied menu for both lunch and dinner, Jannat features fresh natural ingredients infused in simple cooking; from grilled meat and fish dishes, fresh salads and pastas, to a selection of mouth-watering desserts. Jannat offers something to satisfy every taste, and an atmosphere of casual intimacy for every occasion. Whether you are celebrating your stay in the magical city , or looking to unwind with a drink after a busy day, the Jannat restro bar is a place to remember and experience time and time again.</p>
-        </div>
-     </div>
-    <!-- image content end -->
+    </section>
 
-    <!-- bg-image start -->
-     <div class="grid grid-cols-12 bg-[url('./images/diningbg.jpg')] w-full h-[600px] bg-cover bg-center bg-no-repeat bg-fixed">
-
-        <div class="col-span-10 col-start-2 text-white mt-15">
-            <h1 class="text-white text-3xl">Reserve a table <span class="inline-block w-12 border-b-2 border-lime-500"></span></h1>
-            <p class="mt-5">Book your favourite table at the Dayal Paradise in a minute. If you are our guest, you will not spend more than a minute for your booking.</p>
-            <p class="mt-15">91 (522) 405 9999</p>
-            <p>Reserve my Table</p>
-            <br>
-            <p>HOME DELIVERY NO's</p>
-            <p>9235259906</p>
-            <p>9235259907</p>
-            
-            <div class="grid grid-cols-10">
-              <button class="col-start-8 bg-lime-500 h-10 hover:bg-yellow-400 transition duration-300 rouded-xl">BOOK NOW</button>
+    <!-- SECTION 2: JANNAT ROOFTOP -->
+    <section class="py-20 bg-slate-100 border-t border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-6 order-2 lg:order-1">
+            <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="./images/Copy.jpg" alt="Jannat Rooftop Restro Bar" class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700" />
             </div>
-        </div>
-       
-     </div>
-    <!-- bg-image end -->
-
-    <!-- footer start -->
-      <footer class="bg-[#1f1f1f] text-gray-400">
-      <div class="grid grid-cols-12 max-w-7xl mx-auto py-16 gap-8">
-        <!-- LOGO -->
-        <div class="col-span-4">
-          <img src="./images/footerlogo.png" class="w-80" alt="Logo" />
-
-          <p class="mt-5">Comfort | Serenity | Luxury | Greenery</p>
-
-          <!-- social icons -->
-          <div class="flex gap-6 mt-16">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="lg:col-span-6 order-1 lg:order-2">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">Open-Air Rooftop</span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              "Jannat" Rooftop Restaurant & Bar
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 leading-relaxed font-light text-base mb-6">
+              High above the city, Jannat embraces the refreshing Lucknow breeze while offering an unobstructed, mesmerizing panoramic view of Gomti Nagar. It is widely hailed as one of the most romantic spots in Lucknow for delectable food, pleasant acoustic music, and casual al fresco dining under starlit skies.
+            </p>
+            <p class="text-slate-600 leading-relaxed font-light text-base mb-6">
+              From charcoal-grilled kebabs, wood-fired pizzas, fresh pastas, to artisanal hand-crafted cocktails and mocktails, Jannat ensures every evening is truly unforgettable.
+            </p>
+            <div class="flex flex-wrap gap-4 items-center">
+              <a href="#reserveTable" class="btn-gold text-xs">
+                <i class="fa-solid fa-chair"></i> Reserve Rooftop Table
+              </a>
+              <a href="tel:+918795838030" class="btn-gold-outline text-xs">
+                <i class="fa-solid fa-phone"></i> Direct Inquiry
+              </a>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- EXPLORE -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">EXPLORE</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Suite & Rooms</p>
-          <p class="mb-4">Banquets & Lawn</p>
-          <p class="mb-4">Amenities</p>
-          <p class="mb-4">Gallery</p>
-          <p>Careers</p>
+    <!-- TIMINGS & MEAL HOURS SECTION -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">Operating Hours</span>
+          <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">Dining Timings</h2>
+          <div class="gold-divider-center my-3"></div>
+          <p class="text-slate-600 font-light text-sm">Breakfast buffet, executive lunch, and candlelit dinner timings.</p>
         </div>
 
-        <!-- QUICK LINKS -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">QUICK LINKS</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Breakfast -->
+          <div class="p-8 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-[#c5a059] transition-all hover:shadow-lg">
+            <div class="w-14 h-14 rounded-full bg-[#c5a059]/10 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-xl">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2">Breakfast Buffet</h3>
+            <p class="text-[#c5a059] font-bold text-lg mb-2">07:00 AM – 10:30 AM</p>
+            <p class="text-slate-500 text-xs">Aadab Restaurant (Lobby Level) • Fresh juice, live eggs, south Indian & Awadhi breakfast</p>
+          </div>
 
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
+          <!-- Lunch -->
+          <div class="p-8 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-[#c5a059] transition-all hover:shadow-lg">
+            <div class="w-14 h-14 rounded-full bg-[#c5a059]/10 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-xl">
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2">Executive Lunch</h3>
+            <p class="text-[#c5a059] font-bold text-lg mb-2">12:30 PM – 03:30 PM</p>
+            <p class="text-slate-500 text-xs">Aadab Restaurant & Jannat • Multi-course thalis, business express lunch & à la carte</p>
+          </div>
 
-          <p class="mb-4">Packages</p>
-          <p class="mb-4">Conference</p>
-          <p class="mb-4">About Us</p>
-          <p class="mb-4">Terms & Conditions</p>
-          <p class="mb-4">Privacy Policy</p>
-          <p class="mb-4">Cancellation Policy</p>
-          <p>Disclaimer</p>
+          <!-- Dinner -->
+          <div class="p-8 rounded-xl border border-slate-200 bg-slate-50 text-center hover:border-[#c5a059] transition-all hover:shadow-lg">
+            <div class="w-14 h-14 rounded-full bg-[#c5a059]/10 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-xl">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2">Royal Dinner</h3>
+            <p class="text-[#c5a059] font-bold text-lg mb-2">07:30 PM – 11:30 PM</p>
+            <p class="text-slate-500 text-xs">Aadab (7:30 PM – 11:30 PM) & Jannat Rooftop (6:00 PM – 11:30 PM)</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-        <!-- CONTACT -->
-        <div class="col-span-4">
-          <h2 class="text-white text-xl italic font-semibold">CONTACT US</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-6">
-            📍 HOTEL DAYAL PARADISE <br />
-            Vipul Khand - V, Gomti Nagar, Lucknow
+    <!-- RESERVE A TABLE SECTION (#reserveTable) -->
+    <section id="reserveTable" class="relative bg-[url('./images/diningbg.jpg')] bg-cover bg-center bg-fixed py-24 text-white">
+      <div class="absolute inset-0 bg-[#070b19]/85 backdrop-blur-[2px]"></div>
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center mb-10">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">Table Reservations</span>
+          <h2 class="font-heading text-3xl sm:text-5xl font-bold mt-2 text-white">Book Your Table</h2>
+          <div class="gold-divider-center my-3"></div>
+          <p class="text-slate-300 font-light text-sm sm:text-base max-w-xl mx-auto">
+            Experience royal Awadhi dining at Aadab or starlit city breezes at Jannat Rooftop. Send an instant WhatsApp reservation.
           </p>
+        </div>
 
-          <p class="mb-6">📞 +91 8795838030</p>
+        <!-- Table Reservation Form -->
+        <div class="bg-[#0f172a]/95 border border-[#c5a059]/40 rounded-2xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+          <form onsubmit="handleDiningBooking(event)" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Guest Name</label>
+                <input type="text" id="dineName" required placeholder="Your full name" class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]" />
+              </div>
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Contact Number</label>
+                <input type="tel" id="dinePhone" required placeholder="+91 9876543210" class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]" />
+              </div>
+            </div>
 
-          <p>✉ Reservation@Dayalparadise.Com</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Date</label>
+                <input type="date" id="dineDate" required class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]" />
+              </div>
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Meal & Time</label>
+                <select id="dineTime" class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]">
+                  <option value="Lunch (1:00 PM)">Lunch (01:00 PM)</option>
+                  <option value="Dinner - Early (7:30 PM)">Dinner (07:30 PM)</option>
+                  <option value="Dinner - Late (9:00 PM)" selected>Dinner (09:00 PM)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Venue Preference</label>
+                <select id="dineVenue" class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]">
+                  <option value="Jannat Rooftop Bar">Jannat Rooftop Restaurant & Bar</option>
+                  <option value="Aadab Restaurant">Aadab Multi-Cuisine (Lobby Level)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Number of Guests</label>
+                <select id="dineGuests" class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]">
+                  <option value="2 Guests (Couple)">2 Guests (Couple Table)</option>
+                  <option value="4 Guests (Family)" selected>4 Guests (Family)</option>
+                  <option value="6-8 Guests (Group)">6-8 Guests (Celebration)</option>
+                  <option value="10+ Guests (Party)">10+ Guests (Private Area)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Occasion / Requests</label>
+                <input type="text" id="dineNotes" placeholder="E.g., Birthday, Anniversary, Candlelight..." class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]" />
+              </div>
+            </div>
+
+            <button type="submit" class="w-full btn-gold py-3 text-sm font-bold tracking-wider cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-base"></i> Confirm Table on WhatsApp
+            </button>
+          </form>
+
+          <div class="mt-6 pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between text-xs text-slate-400 gap-3">
+            <span>Direct Reception: <strong class="text-white">+91 522 4059999</strong></span>
+            <span>Home Delivery Orders: <strong class="text-white">+91 9235259906 / 07</strong></span>
+          </div>
         </div>
       </div>
-      <!-- Bottom Footer -->
-      <div class="border-t border-gray-700 mx-16 mt-10">
-        <p class="text-gray-500 py-8">
-          © Hotel Dayal Paradise. All rights reserved.
-        </p>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-[#070b19] text-slate-400 border-t border-[#c5a059]/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          <div class="lg:col-span-4">
+            <a href="./index.html" class="inline-block mb-4">
+              <img src="./images/footerlogo.png" class="w-64 sm:w-72 object-contain" alt="Hotel Dayal Paradise Logo" />
+            </a>
+            <p class="text-sm text-[#e5c583] font-medium tracking-wide mb-4">
+              Comfort | Serenity | Luxury | Greenery
+            </p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6 font-light max-w-sm">
+              Hotel Dayal Paradise is one of Lucknow's premier 4-star addresses in Gomti Nagar, renowned for Awadhi culinary excellence and personalized care.
+            </p>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">EXPLORE</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./index.html#rooms" class="hover:text-[#c5a059]">Suite & Rooms</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059]">Banquets & Lawn</a></li>
+              <li><a href="./dining.html" class="hover:text-[#c5a059]">Dining & Bar</a></li>
+              <li><a href="./gallery.html" class="hover:text-[#c5a059]">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">QUICK LINKS</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./aboutus.html" class="hover:text-[#c5a059]">About Us</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059]">Wedding Events</a></li>
+              <li><a href="#" class="hover:text-[#c5a059]">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">CONTACT US</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-3 text-xs sm:text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-[#c5a059] mt-1 text-sm"></i>
+                <span><strong>HOTEL DAYAL PARADISE</strong><br />Vipul Khand - V, Gomti Nagar, Lucknow</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#c5a059] text-sm"></i>
+                <a href="tel:+918795838030" class="hover:text-[#c5a059]">+91 8795838030</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+          <p>© 2026 Hotel Dayal Paradise Lucknow. All rights reserved.</p>
+        </div>
       </div>
     </footer>
-    <!-- footer end -->
 
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+      <a href="https://wa.me/918795838030" target="_blank" class="fab-btn fab-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+918795838030" class="fab-btn fab-phone" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
 
+    <script>
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          menuIcon.classList.toggle('fa-bars');
+          menuIcon.classList.toggle('fa-xmark');
+        });
+      }
+
+      // Pre-fill today's date for dining
+      const dineDateInput = document.getElementById('dineDate');
+      if (dineDateInput) {
+        const today = new Date().toISOString().split('T')[0];
+        dineDateInput.value = today;
+        dineDateInput.min = today;
+      }
+
+      function handleDiningBooking(e) {
+        e.preventDefault();
+        const name = document.getElementById('dineName').value;
+        const phone = document.getElementById('dinePhone').value;
+        const date = document.getElementById('dineDate').value;
+        const time = document.getElementById('dineTime').value;
+        const venue = document.getElementById('dineVenue').value;
+        const guests = document.getElementById('dineGuests').value;
+        const notes = document.getElementById('dineNotes').value || 'Standard';
+
+        const message = `*Table Reservation Request - Hotel Dayal Paradise*%0A%0A` +
+          `*Guest Name:* ${encodeURIComponent(name)}%0A` +
+          `*Phone:* ${encodeURIComponent(phone)}%0A` +
+          `*Venue:* ${encodeURIComponent(venue)}%0A` +
+          `*Date & Time:* ${date} (${time})%0A` +
+          `*Guests:* ${encodeURIComponent(guests)}%0A` +
+          `*Special Requests:* ${encodeURIComponent(notes)}`;
+
+        window.open(`https://wa.me/918795838030?text=${message}`, '_blank');
+      }
+    </script>
   </body>
 </html>

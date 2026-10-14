@@ -3,705 +3,466 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>About Us | Hotel Dayal Paradise Lucknow</title>
+    <meta
+      name="description"
+      content="Discover the legacy of Hotel Dayal Paradise Lucknow. A premier 4-star hotel in Gomti Nagar offering luxury rooms, Awadhi culinary excellence, and regal banquet halls."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Browser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
-      integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
 
+    <!-- Custom Luxury Design System -->
+    <link rel="stylesheet" href="./css/style.css" />
+
     <style>
-     
-
-    swiper-container {
-    width: 100%;
-}
-
-swiper-slide {
-    font-size: 18px;
-    background: white;
-    height: auto;
-}
-
-      
+      swiper-container {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+      swiper-slide {
+        background: transparent;
+        height: auto;
+      }
     </style>
   </head>
-  <body>
-    <!-- top nav start -->
-    <div class="grid grid-cols-12 bg-blue-950 text-white text-sm">
-      <div
-        class="col-span-2 col-start-2 flex items-center justify-center gap-2 text-end my-4"
-      >
-        <i class="fa-solid fa-phone"></i> +91 8795838030
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#d4af37] selection:text-[#070c18]">
+    <!-- TOP NOTIFICATION & CONTACT BAR -->
+    <header class="royal-topbar text-xs text-slate-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+          <a href="tel:+918795838030" class="topbar-link">
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span class="font-medium">+91 8795838030</span>
+          </a>
+          <a href="https://maps.google.com/?q=Hotel+Dayal+Paradise+Gomti+Nagar+Lucknow" target="_blank" class="hidden md:flex topbar-link">
+            <i class="fa-solid fa-location-dot text-xs"></i>
+            <span>Vipul Khand-V, Gomti Nagar, Lucknow</span>
+          </a>
+          <a href="mailto:reservation@dayalparadise.com" class="hidden sm:flex topbar-link">
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span>reservation@dayalparadise.com</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-4 ml-auto">
+          <a href="./index.html#rooms" class="btn-royal-stay">
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Your Stay</span>
+          </a>
+        </div>
       </div>
-      <div class="col-span-3 text-start gap-2 my-4">
-        <i class="fa-solid fa-location-dot"></i> Vipul Khand-V,Gomti Nagar,
-        Lucknow
-      </div>
-      <div class="col-span-2 gap-2 my-4">
-        <i class="fa-solid fa-envelope"></i> reservation@dayalparadise.com
-      </div>
-      <div class="col-span-3 text-center my-4 col-start-9">
-        <a href="#" class="bg-sky-100 text-blue-950 px-3 py-1"
-          >BOOK YOUR ROOM</a
-        >
-      </div>
-    </div>
-    <!-- top nav end -->
+    </header>
 
-    <!-- mid nav start  -->
-    <div class="grid grid-cols-12 sticky top-0 z-50 bg-slate-50">
-      <div class="col-span-12">
-        <nav class="bg-neutral-primary w-full z-20 top-0 start-0">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img src="./images/logo.png" class="h-15" alt="Flowbite Logo" />
-            </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                  d="M5 7h14M5 12h14M5 17h14"
-                />
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./aboutus.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >suite & rooms</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./dining.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Dining</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./b&l.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >banquets and lawn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./gallery.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >gallery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >contact us</a
-                  >
-                </li>
-              </ul>
+    <!-- STICKY LUXURY NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 luxury-navbar shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Royal Hotel Logo Badge -->
+          <a href="./index.html" class="royal-logo-badge group" title="Hotel Dayal Paradise">
+            <img src="./images/logo.png" alt="Hotel Dayal Paradise Logo" />
+          </a>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+            <a href="./index.html" class="luxury-nav-link">Home</a>
+            <a href="./aboutus.html" class="luxury-nav-link active">About Us</a>
+            <a href="./index.html#rooms" class="luxury-nav-link">Suites & Rooms</a>
+            <a href="./dining.html" class="luxury-nav-link">Dining</a>
+            <a href="./b&l.html" class="luxury-nav-link">Banquets & Lawn</a>
+            <a href="./aminities.html" class="luxury-nav-link">Amenities</a>
+            <a href="./gallery.html" class="luxury-nav-link">Gallery</a>
+            <a href="./index.html#contact" class="luxury-nav-link">Contact</a>
+          </div>
+
+          <!-- Concierge Direct Desk -->
+          <div class="hidden xl:flex items-center pl-3">
+            <div class="royal-concierge-pill">
+              <div class="concierge-icon-circle">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div>
+                <p class="text-[9px] uppercase tracking-[0.18em] text-[#dfc07b] font-bold leading-none mb-1">24/7 Concierge</p>
+                <a href="tel:+918795838030" class="text-xs font-bold text-white hover:text-[#fae9bd] transition-colors leading-none tracking-wide">
+                  +91 8795838030
+                </a>
+              </div>
             </div>
           </div>
-        </nav>
+
+          <!-- Mobile Hamburger Button -->
+          <button id="mobileMenuToggle" type="button" class="lg:hidden p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none" aria-label="Toggle menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl text-[#d4af37]"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <!-- mid nav end  -->
 
-    <!-- image section start -->
-    <div
-      class="grid grid-cols-12 bg-[url('./images/aminities.jpg')] w-full h-[200px] bg-cover bg-center bg-no-repeat"
-    >
-      <h1 class="text-white text-5xl absolute ml-40 mt-15">
-        About Us
-        <span class="inline-block w-12 border-b-2 border-lime-500"></span>
-      </h1>
-    </div>
-    <div class="grid grid-cols-12 shadow-lg py-5">
-      <div class="col-start-2 col-span-4 text-black flex items-center">
-        <a href="#">HOME</a>
-        <h1 class="ml-2">&gt; About Us</h1>
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden mobile-nav-drawer px-4 pt-3 pb-6 space-y-1.5">
+        <a href="./index.html" class="mobile-nav-link">Home</a>
+        <a href="./aboutus.html" class="mobile-nav-link active">About Us</a>
+        <a href="./index.html#rooms" class="mobile-nav-link">Suites & Rooms</a>
+        <a href="./dining.html" class="mobile-nav-link">Dining</a>
+        <a href="./b&l.html" class="mobile-nav-link">Banquets & Lawn</a>
+        <a href="./aminities.html" class="mobile-nav-link">Amenities</a>
+        <a href="./gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="./index.html#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-3 border-t border-[#d4af37]/20 mt-2">
+          <a href="./index.html#rooms" class="btn-royal-stay w-full justify-center py-2.5 text-xs">
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Your Stay</span>
+          </a>
+        </div>
       </div>
-    </div>
-    <!-- image section end -->
+    </nav>
 
-    <!-- content section start -->
-    <div class="grid grid-cols-12">
-      <div class="col-span-7 col-start-2 mt-20">
-        <h1 class="text-3xl">About Hotel</h1>
-        <p class="mt-1">
-          Welcome to Hotel Dayal Paradise
-          <span class="inline-block w-16 border-b-3 border-lime-500"></span>
-        </p>
-        <p class="mt-10">
-          Dayal Paradise - a plush address of Comfort, Serenity, Luxury &
-          Greenery, is located in the tranquil backdrops of Vipul Khand, Gomti
-          Nagar, amidst Multiplexes, Recreational Parks, and Corporate &
-          Business Houses, is well connected to the Railway Station, City Bus
-          Terminal & Airport. An ideal abode for Vacations, Conferences,
-          Weddings or any other events, it is complete with excellent facilities
-          for a rewarding stay.
-        </p>
-        <div class="bg-lime-300 w-full border b-2 mt-15 shadow-lg"></div>
-        <p class="mt-5 text-emerald-400">
-          One of the most cozy hotel in the locality. Rooftop restaurent is
-          awesome.
-        </p>
-        <div class="bg-lime-300 w-full border b-2 mt-5 shadow-lg"></div>
-        <div class="grid grid-cols-7 mt-10">
-          
-            <ul class="col-span-8  grid grid-cols-12">
-              <li class="col-span-3 text-2xl flex items-center gap-2">
-                <img src="./images/check.png" class="w-5 h-5" alt="" />
-                Awesome Nature
+    <!-- INNER PAGE HERO BANNER -->
+    <section class="relative bg-[url('./images/aminities.jpg')] bg-cover bg-center h-[260px] sm:h-[300px] flex items-center justify-center text-white">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#070b19] via-[#070b19]/75 to-[#070b19]/50"></div>
+      <div class="relative z-10 text-center px-4 max-w-4xl">
+        <span class="text-[#e5c583] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">Our Legacy & Heritage</span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-bold mt-2 text-white">About Dayal Paradise</h1>
+        <div class="gold-divider-center my-3"></div>
+        <div class="flex items-center justify-center gap-2 text-xs uppercase tracking-wider text-slate-300">
+          <a href="./index.html" class="hover:text-[#c5a059]">Home</a>
+          <span>/</span>
+          <span class="text-[#c5a059]">About Us</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT HOTEL OVERVIEW -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Text Content -->
+          <div class="lg:col-span-7">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">
+              Welcome To Lucknow's Finest
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              Comfort, Serenity & Luxury in Vipul Khand
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 leading-relaxed font-light text-base sm:text-lg mb-6">
+              Dayal Paradise – a plush address of Comfort, Serenity, Luxury & Greenery, is located in the tranquil backdrops of Vipul Khand, Gomti Nagar. Amidst multiplexes, recreational parks, and corporate & business houses, it is seamlessly connected to the Railway Station, City Bus Terminal, Airport, and Amar Shaheed Path.
+            </p>
+            <p class="text-slate-600 leading-relaxed font-light text-base mb-8">
+              An ideal abode for vacations, conferences, weddings, or celebratory galas, it is also Lucknow’s preferred family-friendly hotel, complete with 55 designer rooms, award-winning multi-cuisine dining, and expansive banqueting halls.
+            </p>
+
+            <!-- Highlight Quote Box -->
+            <div class="border-l-4 border-[#c5a059] bg-[#faf7f2] p-5 rounded-r-md mb-8">
+              <p class="text-[#0a1128] font-serif italic text-lg leading-relaxed">
+                "One of the most cozy hotels in Lucknow. The rooftop Jannat restaurant is simply magnificent, blending refreshing breezes with starlit skyline dining."
+              </p>
+            </div>
+
+            <!-- 3 Highlights Pills -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="flex items-center gap-3 p-3 bg-slate-50 border border-slate-200 rounded-md">
+                <i class="fa-solid fa-tree text-[#c5a059] text-xl"></i>
+                <span class="font-semibold text-sm text-[#0a1128]">Lush Greenery</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 border border-slate-200 rounded-md">
+                <i class="fa-solid fa-award text-[#c5a059] text-xl"></i>
+                <span class="font-semibold text-sm text-[#0a1128]">Awarded 4-Star</span>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-slate-50 border border-slate-200 rounded-md">
+                <i class="fa-solid fa-shield-halved text-[#c5a059] text-xl"></i>
+                <span class="font-semibold text-sm text-[#0a1128]">Royal Hospitality</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Image Showcase -->
+          <div class="lg:col-span-5 relative">
+            <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+              <img src="./images/aboutus.jpg" alt="Hotel Dayal Paradise Facade" class="w-full h-auto object-cover" />
+            </div>
+            <div class="absolute -bottom-6 -right-6 w-48 h-48 bg-[#c5a059]/15 rounded-full blur-2xl -z-0"></div>
+            <div class="absolute -top-6 -left-6 w-32 h-32 border-2 border-[#c5a059]/40 rounded-2xl -z-0"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHOTO MOSAIC & VALUES ACCORDION -->
+    <section class="py-20 bg-slate-100 border-t border-b border-slate-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left: Collage Photos -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+            <div class="space-y-4">
+              <img src="./images/aboutgrid1.jpg" alt="Hotel Interior" class="rounded-xl shadow-md object-cover w-full h-56" />
+              <img src="./images/aboutgrid2.jpg" alt="Executive Lounge" class="rounded-xl shadow-md object-cover w-full h-44" />
+            </div>
+            <div class="pt-6 space-y-4">
+              <img src="./images/aboutgrid3.jpg" alt="Guest Room" class="rounded-xl shadow-md object-cover w-full h-44" />
+              <div class="bg-[#0a1128] text-white p-6 rounded-xl shadow-md border border-[#c5a059]/30 flex flex-col justify-center">
+                <span class="text-[#c5a059] text-3xl font-heading font-bold">15+</span>
+                <p class="text-xs uppercase tracking-wider text-slate-300 mt-1">Years of Royal Hospitality</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Core Values & What DAYAL Stands For -->
+          <div class="lg:col-span-7">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">Our Principles</span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              Our Values Are Our Priorities
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 mb-8 leading-relaxed font-light">
+              We operate on an unwavering foundation of guest devotion, transparent service, and royal Awadhi Tehzeeb.
+            </p>
+
+            <div class="space-y-4">
+              <!-- Item 1 -->
+              <div class="custom-accordion-item active">
+                <button type="button" class="custom-accordion-header" onclick="toggleAccordion(this)">
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-gem text-[#c5a059]"></i> What DAYAL Stands For
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <div class="text-sm text-slate-600 space-y-2 py-2">
+                    <p><strong class="text-[#0a1128]">D</strong> — Delicious Cuisine, Devotion, Dignity, Discipline & Dedicated Staff</p>
+                    <p><strong class="text-[#0a1128]">A</strong> — Adorable, Accountable & Authentic Guest Care</p>
+                    <p><strong class="text-[#0a1128]">Y</strong> — Young-at-Heart, Yummy Recipes, and True Value</p>
+                    <p><strong class="text-[#0a1128]">A</strong> — Affectionate Hospitality & Admiration</p>
+                    <p><strong class="text-[#0a1128]">L</strong> — Luxury, Longevity, Loyalty & Exemplary Leadership</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="custom-accordion-item">
+                <button type="button" class="custom-accordion-header" onclick="toggleAccordion(this)">
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-compass text-[#c5a059]"></i> Our Mission
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <p class="text-sm text-slate-600 leading-relaxed py-2">
+                    To be the most hospitable place, a true "Home away from Home" by providing heartfelt, memorable experiences for our guests, and career-building opportunities for our team. We will remain faithful to our cause and continue to make the world a warmer, more welcoming place.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="custom-accordion-item">
+                <button type="button" class="custom-accordion-header" onclick="toggleAccordion(this)">
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-eye text-[#c5a059]"></i> Our Vision
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <p class="text-sm text-slate-600 leading-relaxed py-2">
+                    To work diligently to make hospitality a divine, fulfilling experience. We strive to implement our deep industry knowledge in all walks of life, nurturing enduring relationships with every traveler who graces our doors.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SWIPER -->
+    <section class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">Guest Reviews</span>
+          <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">What Our Guests Say</h2>
+          <div class="gold-divider-center my-3"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1 -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="stars mb-3 text-[#f59e0b]">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                "It's just an awesome place with delicious food. Roof top Jannat restaurant & bar is too good. Great hotel to enjoy with family and friends in Lucknow."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img src="./images/nitinarora.png" alt="Nitin Arora" class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]" />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Nitin Arora</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Guest Review</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="stars mb-3 text-[#f59e0b]">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                "Superb & beautiful place... awesome food and very supportive staff. I strongly recommend Dayal Paradise to my friends & family staying in Gomti Nagar."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img src="./images/neerajtripathi.png" alt="Neeraj Tripathi" class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]" />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Neeraj Tripathi</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Guest Review</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="stars mb-3 text-[#f59e0b]">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+              <p class="text-slate-700 text-sm italic mb-6 leading-relaxed">
+                "Amazing hotel and wonderful experience. The banquet arrangements for our family wedding were executed flawlessly. Highly impressed with the hospitality."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img src="./images/kashish.png" alt="Kashish" class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]" />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Kashish</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Guest Review</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-[#070b19] text-slate-400 border-t border-[#c5a059]/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          <div class="lg:col-span-4">
+            <a href="./index.html" class="inline-block mb-4">
+              <img src="./images/footerlogo.png" class="w-64 sm:w-72 object-contain" alt="Hotel Dayal Paradise Logo" />
+            </a>
+            <p class="text-sm text-[#e5c583] font-medium tracking-wide mb-4">
+              Comfort | Serenity | Luxury | Greenery
+            </p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6 font-light max-w-sm">
+              Hotel Dayal Paradise is one of Lucknow's premier 4-star addresses in Gomti Nagar, renowned for Awadhi culinary excellence and personalized care.
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-x-twitter text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">EXPLORE</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./index.html#rooms" class="hover:text-[#c5a059] transition-colors">Suite & Rooms</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059] transition-colors">Banquets & Lawn</a></li>
+              <li><a href="./dining.html" class="hover:text-[#c5a059] transition-colors">Aadab Restaurant</a></li>
+              <li><a href="./aminities.html" class="hover:text-[#c5a059] transition-colors">Amenities & Gym</a></li>
+              <li><a href="./gallery.html" class="hover:text-[#c5a059] transition-colors">Photo Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">QUICK LINKS</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./aboutus.html" class="hover:text-[#c5a059] transition-colors">About Us</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059] transition-colors">Wedding Packages</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">CONTACT US</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-3 text-xs sm:text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-[#c5a059] mt-1 text-sm"></i>
+                <span><strong>HOTEL DAYAL PARADISE</strong><br />Vipul Khand - V, Gomti Nagar, Lucknow</span>
               </li>
-
-              <li class="col-span-3 flex text-2xl items-center gap-2">
-                <img src="./images/check.png" class="w-5 h-5" alt="" />
-                Awarded Hotel
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#c5a059] text-sm"></i>
+                <a href="tel:+918795838030" class="hover:text-[#c5a059]">+91 8795838030</a>
               </li>
-
-              <li class="col-span-3 flex text-2xl items-center gap-2">
-                <img src="./images/check.png" class="w-5 h-5" alt="" />
-                Online Booking
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-[#c5a059] text-sm"></i>
+                <a href="mailto:reservation@dayalparadise.com" class="hover:text-[#c5a059]">reservation@dayalparadise.com</a>
               </li>
             </ul>
-          
-        </div>
-      </div>
-      <!-- right -->
-
-      <div class="col-span-3 col-start-10">
-        <img class="mt-20 border-l-8 border-b-8  border-yellow-600" src="./images/aboutus.jpg" alt="" />
-      </div>
-    </div>
-
-    <!-- <div class="grid grid-cols-12">
-      <ul class="col-span-8 col-start-2 grid grid-cols-12">
-        <li class="col-span-3 text-2xl flex items-center gap-2">
-          <img src="./images/check.png" class="w-5 h-5" alt="" />
-          Awesome Nature
-        </li>
-
-        <li class="col-span-3 flex text-2xl items-center gap-2">
-          <img src="./images/check.png" class="w-5 h-5" alt="" />
-          Awarded Hotel
-        </li>
-
-        <li class="col-span-3 flex text-2xl items-center gap-2">
-          <img src="./images/check.png" class="w-5 h-5" alt="" />
-          Online Booking
-        </li>
-      </ul>
-    </div> -->
-
-    <!-- content section end -->
-
-    <!-- image section start -->
-     <div class="grid grid-cols-12 mt-20 bg-gray-100">
-      <!-- left -->
-      <div class="col-span-5 gap-3 mt-20 col-start-2 flex">
-        <div class="col-span-1">
-          <img src="./images/aboutgrid1.jpg" alt="">
-        </div>
-        <div class="col-span-2 ">
-          <img src="./images/aboutgrid2.jpg" alt="">
-          <img class="mt-2" src="./images/aboutgrid3.jpg" alt="">
-        </div>
-      </div>
-      <!-- right -->
-      <div class="col-span-5">
-
-          <div class="col-span-6 ">
-        <h1 class="text-black font-medium text-4xl italic mt-20">
-          Our Values
-         
-        </h1>
-        <p class="mt-1">Our values are our priorities<span
-            class="inline-block w-16 border-b-2 border-lime-500 ml-1"
-          ></span</p>
-
-        <!-- accordion start -->
-
-        <div
-          id="accordion-collapse"
-          data-accordion="collapse"
-          class="overflow-hidden shadow-xs mt-10"
-        >
-          <h2 id="accordion-collapse-heading-1">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-1"
-              aria-expanded="true"
-              aria-controls="accordion-collapse-body-1"
-            >
-              <span class="font-bold text-xl">What DAYAL stands for ?</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-1"
-            class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
-            aria-labelledby="accordion-collapse-heading-1"
-          >
-            <div class="flex justify-between ml-10 p-5">
-              <!-- <img class="mt-3" src="./images/core-values.png" alt="" /> -->
-              <ul>
-                <li>D- DELICIOUS, DEVOTION, DIGNITY, DISCIPLINE, DEDICATED</li>
-                <li>A- ADORABLE, ACCOUNTABLE, AUTHENTIC</li>
-                <li>Y- YES, YOUNG- AT-HEART, YUMMY, YOUR TRUE VALUE</li>
-                <li>A- AFFECTIONATE, AWESOMENESS, ADMIRATION</li>
-                <li>L- LUXURY, LONGEVITY, LOYALTY, LEADERSHIP</li>
-
-              </ul>
-            </div>
-          </div>
-          <!-- second heading -->
-          <h2 id="accordion-collapse-heading-2">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-2"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-2"
-            >
-              <span class="font-bold text-xl">OUR MISSIONS</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-2"
-            class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
-            aria-labelledby="accordion-collapse-heading-2"
-          >
-            <div class="flex justify-between">
-              <!-- <img class="mt-3" src="./images/vision.jpg" alt="" /> -->
-              <p class="ml-5 p-5">
-                To be the most hospitable place, a 'Home' away from 'Home' in true sense â€“ by providing heartfelt experiences for Guests, and career and character building experiences and opportunities for our Team. We will remain faithfull to our cause and will continue to strive to make world a better and momre hospitable place
-              </p>
-            </div>
-          </div>
-          <h2 id="accordion-collapse-heading-3">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-3"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-3"
-            >
-              <span class="font-bold text-xl">OUR VISIONS</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-3"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-3"
-          >
-            <div class="flex justify-between">
-              <!-- <img class="mt-3" src="./images/core-values (1).png" alt="" /> -->
-              <p class="mt-5 ml-5">
-                To work diligently to make the Hospitality a divine and fullfiling experience. And to implement our experience in Hospitality industry in all walks of life and society, to make world a better place.
-              </p>
-            </div>
           </div>
         </div>
 
-        <!-- accordion end -->
-      </div>
-      </div>
-     </div>
-    <!-- image section end -->
-
-
-    <!-- accordian start -->
-
-    <div class="grid grid-cols-12">
-      <!-- heading start -->
-       
-        <div class="col-span-12 col-start-2">
-    <h1 class="text-4xl italic font-semibold text-blue-950">
-      Testimonials
-    </h1>
-
-    <div class="flex items-center gap-4 mt-2">
-      <p class="text-xl italic text-gray-400">
-        What our guests say about us
-      </p>
-
-      <span class="inline-block w-20 border-b-2 border-lime-500"></span>
-    </div>
-  </div>
-      <!-- heading end -->
-
-      <!-- accordian card start -->
-
-      <div class="col-span-10 col-start-2 mt-10">
-
-  <swiper-container
-    class="mySwiper"
-    pagination="true"
-    pagination-clickable="true"
-    
-    space-between="20"
-    centered-slides="false"
-    autoplay-delay="2500"
-    autoplay-disable-on-interaction="false"
-    slides-per-view="2"
-  >
-
-    <!-- Slide 1 -->
-    <swiper-slide>
-
-      <div class="w-full">
-
-        <!-- Green Review Box -->
-        <div class="relative bg-lime-300 rounded-xl mx-5 p-4">
-
-          <p class="text-lg leading-8 text-black text-left">
-            It's just an awesome place with delicious food. Roof top jannat
-            restaurant n bar too good. Great hotel place to enjoy with family
-            and friends.
-          </p>
-
-          <!-- Triangle -->
-          <div
-            class="absolute left-9 top-full
-            border-l-[18px] border-l-transparent
-            border-r-[18px] border-r-transparent
-            border-t-[30px] border-t-gray-100">
-          </div>
-
+        <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <p>© 2026 Hotel Dayal Paradise Lucknow. All rights reserved.</p>
         </div>
-
-        <!-- Person -->
-        <div class="flex items-center gap-6 mt-12">
-
-          <img
-            src="./images/nitinarora.png"
-            alt=""
-            class="w-24 h-24 rounded-full object-cover"
-          />
-
-          <h2 class="text-2xl italic text-blue-800">
-            Nitin Arora
-          </h2>
-
-        </div>
-
-      </div>
-
-    </swiper-slide>
-
-
-    <!-- Slide 2 -->
-    <swiper-slide>
-
-      <div class="w-full">
-
-        <!-- Green Review Box -->
-        <div class="relative bg-lime-300 rounded-xl px-9 py-8">
-
-          <p class="text-lg leading-8 text-black text-left">
-            Superb & beautiful place......awesome food very supportive staff.
-            I strongly recommended to my friends & family stay in Dayal Paradise.
-          </p>
-
-          <!-- Triangle -->
-          <div
-            class="absolute left-9 top-full
-            border-l-[18px] border-l-transparent
-            border-r-[18px] border-r-transparent
-            border-t-[30px] border-t-gray-100">
-          </div>
-
-        </div>
-
-        <!-- Person -->
-        <div class="flex items-center gap-6 mt-12">
-
-          <img
-            src="./images/neerajtripathi.png"
-            alt=""
-            class="w-24 h-24 rounded-full object-cover"
-          />
-
-          <h2 class="text-2xl italic text-blue-800">
-            Neeraj Tripathi
-          </h2>
-
-        </div>
-
-      </div>
-
-    </swiper-slide>
-
-
-    <!-- Slide 3 -->
-    <swiper-slide>
-
-      <div class="w-full">
-
-        <div class="relative bg-lime-300 rounded-xl px-9 py-8">
-
-          <p class="text-lg leading-8 text-black text-left">
-            Amazing hotel and wonderful experience. The staff was very
-            supportive and the food was excellent.
-          </p>
-
-          <div
-            class="absolute left-9 top-full
-            border-l-[18px] border-l-transparent
-            border-r-[18px] border-r-transparent
-            border-t-[30px] border-t-gray-100">
-          </div>
-
-        </div>
-
-        <div class="flex items-center gap-6 mt-12">
-
-          <img
-            src="./images/kashish.png"
-            alt=""
-            class="w-24 h-24 rounded-full object-cover"
-          />
-
-          <h2 class="text-2xl italic text-blue-800">
-            Kashish
-          </h2>
-
-        </div>
-
-      </div>
-
-    </swiper-slide>
-
-    <!-- slide-4 -->
-         <swiper-slide>
-
-      <div class="w-full">
-
-        <!-- Green Review Box -->
-        <div class="relative bg-lime-300 rounded-xl mx-5 p-4">
-
-          <p class="text-lg leading-8 text-black text-left">
-            It's just an awesome place with delicious food. Roof top jannat
-            restaurant n bar too good. Great hotel place to enjoy with family
-            and friends.
-          </p>
-
-          <!-- Triangle -->
-          <div
-            class="absolute left-9 top-full
-            border-l-[18px] border-l-transparent
-            border-r-[18px] border-r-transparent
-            border-t-[30px] border-t-gray-100">
-          </div>
-
-        </div>
-
-        <!-- Person -->
-        <div class="flex items-center gap-6 mt-12">
-
-          <img
-            src="./images/nitinarora.png"
-            alt=""
-            class="w-24 h-24 rounded-full object-cover"
-          />
-
-          <h2 class="text-2xl italic text-blue-800">
-            Nitin Arora
-          </h2>
-
-        </div>
-
-      </div>
-
-    </swiper-slide>
-
-
-  </swiper-container>
-  </div>
-
-</div>
-      <!-- accordian card end -->
-    
-    <!-- accordian end -->
-
-    <!-- footer section start -->
-     <footer class="bg-[#1f1f1f] text-gray-400 mt-25">
-      <div class="grid grid-cols-12 max-w-7xl mx-auto py-16 gap-8">
-        <!-- LOGO -->
-        <div class="col-span-4">
-          <img src="./images/footerlogo.png" class="w-80" alt="Logo" />
-
-          <p class="mt-5">Comfort | Serenity | Luxury | Greenery</p>
-
-          <!-- social icons -->
-          <div class="flex gap-6 mt-16">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
-        </div>
-
-        <!-- EXPLORE -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">EXPLORE</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Suite & Rooms</p>
-          <p class="mb-4">Banquets & Lawn</p>
-          <p class="mb-4">Amenities</p>
-          <p class="mb-4">Gallery</p>
-          <p>Careers</p>
-        </div>
-
-        <!-- QUICK LINKS -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">QUICK LINKS</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Packages</p>
-          <p class="mb-4">Conference</p>
-          <p class="mb-4">About Us</p>
-          <p class="mb-4">Terms & Conditions</p>
-          <p class="mb-4">Privacy Policy</p>
-          <p class="mb-4">Cancellation Policy</p>
-          <p>Disclaimer</p>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="col-span-4">
-          <h2 class="text-white text-xl italic font-semibold">CONTACT US</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-6">
-            📍 HOTEL DAYAL PARADISE <br />
-            Vipul Khand - V, Gomti Nagar, Lucknow
-          </p>
-
-          <p class="mb-6">📞 +91 8795838030</p>
-
-          <p>✉ Reservation@Dayalparadise.Com</p>
-        </div>
-      </div>
-      <!-- Bottom Footer -->
-      <div class="border-t border-gray-700 mx-16 mt-10">
-        <p class="text-gray-500 py-8">
-          © Hotel Dayal Paradise. All rights reserved.
-        </p>
       </div>
     </footer>
-  
-    <!-- footer section end -->
-         <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <!-- Floating WhatsApp -->
+    <div class="floating-actions">
+      <a href="https://wa.me/918795838030" target="_blank" class="fab-btn fab-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+918795838030" class="fab-btn fab-phone" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+
+    <script>
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          menuIcon.classList.toggle('fa-bars');
+          menuIcon.classList.toggle('fa-xmark');
+        });
+      }
+
+      function toggleAccordion(button) {
+        const item = button.closest('.custom-accordion-item');
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.custom-accordion-item').forEach(acc => acc.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+      }
+    </script>
   </body>
 </html>

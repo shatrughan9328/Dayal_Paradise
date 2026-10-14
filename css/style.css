@@ -1,0 +1,864 @@
+/* ========================================================
+   HOTEL DAYAL PARADISE - LUXURY DESIGN SYSTEM & STYLES
+   4-Star Luxury Hotel, Gomti Nagar, Lucknow
+   ======================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Royal & Heritage Color Palette - Soothing Imperial Velvet & Gold */
+  --color-primary: #0b1329;
+  --color-primary-light: #152244;
+  --color-dark: #070c18;
+  --color-dark-card: #0f1a35;
+  
+  /* Authentic Royal Champagne & 24K Gold Accents (Pleasing to eyes & regal) */
+  --gold-primary: #d4af37;
+  --gold-light: #fae9bd;
+  --gold-warm: #dfc07b;
+  --gold-dark: #a68334;
+  --gold-gradient: linear-gradient(135deg, #fae9bd 0%, #d4af37 50%, #b88b2e 100%);
+  --gold-glow: 0 0 25px rgba(212, 175, 55, 0.35);
+  
+  /* Neutral Luxury Palette */
+  --bg-cream: #faf7f2;
+  --bg-sand: #f4efe6;
+  --text-dark: #1e293b;
+  --text-muted: #64748b;
+  --text-light: #e2e8f0;
+  --border-light: rgba(212, 175, 55, 0.25);
+  
+  /* Typography */
+  --font-heading: 'Cinzel', serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Radii & Shadows */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+  --shadow-luxury: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Reset & Base */
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  color: var(--text-dark);
+  background-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #080c16;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--gold-primary);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-light);
+}
+
+/* Typography Classes */
+.font-heading {
+  font-family: var(--font-heading) !important;
+  letter-spacing: 0.05em;
+}
+
+.font-serif {
+  font-family: var(--font-serif) !important;
+}
+
+.font-sans {
+  font-family: var(--font-sans) !important;
+}
+
+/* Gold Accents & Badges */
+.text-gold {
+  color: var(--gold-primary) !important;
+}
+
+.text-gold-light {
+  color: var(--gold-light) !important;
+}
+
+.bg-gold {
+  background-color: var(--gold-primary) !important;
+  color: #080c16 !important;
+}
+
+.bg-gold-gradient {
+  background: var(--gold-gradient) !important;
+  color: #080c16 !important;
+}
+
+.border-gold {
+  border-color: var(--gold-primary) !important;
+}
+
+.border-gold-light {
+  border-color: rgba(197, 160, 89, 0.3) !important;
+}
+
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: var(--gold-gradient);
+  display: inline-block;
+  border-radius: 2px;
+}
+
+.gold-divider-center {
+  width: 80px;
+  height: 3px;
+  background: var(--gold-gradient);
+  margin: 12px auto 0;
+  display: block;
+  border-radius: 2px;
+}
+
+/* Luxury Buttons */
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #080c16 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(197, 160, 89, 0.5);
+  color: #000000 !important;
+}
+
+.btn-gold::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transition: 0.6s;
+}
+
+.btn-gold:hover::after {
+  left: 100%;
+}
+
+.btn-gold-outline {
+  border: 1.5px solid var(--gold-primary);
+  color: var(--gold-primary) !important;
+  background: transparent;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 10px 24px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-gold-outline:hover {
+  background: var(--gold-gradient);
+  color: #080c16 !important;
+  border-color: transparent;
+  box-shadow: 0 4px 20px rgba(197, 160, 89, 0.35);
+  transform: translateY(-2px);
+}
+
+/* ========================================================
+   ROYAL HEADER & NAVIGATION SUITE
+   ======================================================== */
+
+/* Royal Top Contact Ribbon */
+.royal-topbar {
+  background: linear-gradient(180deg, #070c18 0%, #0b1329 100%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  position: relative;
+}
+
+.royal-topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.25) 15%, #fae9bd 50%, rgba(212, 175, 55, 0.25) 85%, transparent 100%);
+}
+
+.topbar-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.topbar-link:hover {
+  color: var(--gold-light);
+}
+
+.topbar-link i {
+  color: var(--gold-warm);
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.topbar-link:hover i {
+  color: var(--gold-light);
+  transform: scale(1.15);
+}
+
+/* Royal Jewel "Book Your Stay" Button */
+.btn-royal-stay {
+  background: linear-gradient(135deg, #fae9bd 0%, #d4af37 50%, #b88b2e 100%);
+  color: #070c18 !important;
+  font-weight: 700;
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 6px 18px;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 12px rgba(212, 175, 55, 0.35);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-royal-stay::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  transform: skewX(-20deg);
+  transition: 0.6s ease;
+}
+
+.btn-royal-stay:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.55);
+  color: #000000 !important;
+}
+
+.btn-royal-stay:hover::after {
+  left: 140%;
+}
+
+/* Sticky Luxury Navbar */
+.luxury-navbar {
+  background: rgba(11, 19, 41, 0.94);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.22);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(212, 175, 55, 0.12);
+  transition: all 0.35s ease;
+}
+
+/* Royal Brand Logo Plaque - Crisp & Elegant on any background */
+.royal-logo-badge {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(250, 246, 238, 0.95) 100%);
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), 0 0 14px rgba(212, 175, 55, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.royal-logo-badge:hover {
+  transform: translateY(-1px);
+  border-color: rgba(212, 175, 55, 0.8);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+}
+
+.royal-logo-badge img {
+  height: 42px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .royal-logo-badge img {
+    height: 46px;
+  }
+}
+
+.royal-logo-badge:hover img {
+  transform: scale(1.02);
+}
+
+/* Nav Links - High legibility, pleasing to the eyes */
+.luxury-nav-link {
+  color: #e2e8f0;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  padding: 8px 12px;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.luxury-nav-link:hover {
+  color: var(--gold-light) !important;
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.luxury-nav-link.active {
+  color: var(--gold-light) !important;
+  background: linear-gradient(180deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.03) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.luxury-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 15%;
+  width: 70%;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent, #fae9bd, #d4af37, #fae9bd, transparent);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.85);
+  border-radius: 2px;
+}
+
+/* Royal Concierge Capsule */
+.royal-concierge-pill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 9999px;
+  padding: 5px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.royal-concierge-pill:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: rgba(212, 175, 55, 0.6);
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.25);
+  transform: translateY(-1px);
+}
+
+.concierge-icon-circle {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.25) 0%, rgba(250, 233, 189, 0.15) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-light);
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.royal-concierge-pill:hover .concierge-icon-circle {
+  background: linear-gradient(135deg, var(--gold-light) 0%, var(--gold-primary) 100%);
+  color: #070c18;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+}
+
+/* Mobile Drawer Styling */
+.mobile-nav-drawer {
+  background: rgba(9, 15, 33, 0.98);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: 10px 14px;
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 0.925rem;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.12);
+  border-left: 3px solid var(--gold-primary);
+}
+
+/* Floating Booking Engine */
+.booking-engine-bar {
+  background: rgba(10, 17, 40, 0.96);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(197, 160, 89, 0.35);
+  border-radius: var(--radius-md);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 40;
+}
+
+.booking-input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background 0.2s ease;
+}
+
+.booking-input-group:last-child {
+  border-right: none;
+}
+
+.booking-input-group:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.booking-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--gold-light);
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.booking-control {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.booking-control option {
+  background: #0f172a;
+  color: #ffffff;
+}
+
+/* Luxury Feature Card */
+.luxury-card {
+  background: #111827;
+  border: 1px solid rgba(197, 160, 89, 0.2);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.luxury-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--gold-gradient);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(197, 160, 89, 0.6);
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6), var(--gold-glow);
+}
+
+.luxury-card:hover::before {
+  opacity: 1;
+}
+
+/* Room Card */
+.room-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e2e8f0;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 25px 40px -15px rgba(0, 0, 0, 0.18);
+  border-color: rgba(197, 160, 89, 0.5);
+}
+
+.room-card .image-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+}
+
+.room-card .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.room-card:hover .image-wrapper img {
+  transform: scale(1.08);
+}
+
+.room-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(10, 17, 40, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+}
+
+.amenity-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* Lucknow Landmark / Distance Card */
+.landmark-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.landmark-card:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 25px -5px rgba(197, 160, 89, 0.15);
+  transform: translateY(-3px);
+}
+
+.landmark-icon {
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, #0a1128, #162447);
+  color: var(--gold-primary);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(197, 160, 89, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.1);
+}
+
+.quote-icon {
+  font-size: 2.2rem;
+  color: rgba(197, 160, 89, 0.25);
+  margin-bottom: 12px;
+}
+
+.stars {
+  color: #f59e0b;
+  display: flex;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+/* Accordion Styles */
+.custom-accordion-item {
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-sm);
+  margin-bottom: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.custom-accordion-item.active {
+  border-color: var(--gold-primary);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.12);
+}
+
+.custom-accordion-header {
+  width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: left;
+  transition: background 0.2s ease;
+}
+
+.custom-accordion-header:hover {
+  background: #fafaf9;
+  color: var(--gold-dark);
+}
+
+.custom-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.3s ease;
+  background: #fafaf9;
+  padding: 0 24px;
+}
+
+.custom-accordion-item.active .custom-accordion-content {
+  max-height: 500px;
+  padding: 20px 24px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s ease;
+  color: var(--gold-primary);
+}
+
+.custom-accordion-item.active .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+/* Floating Action Buttons */
+.floating-actions {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 999;
+}
+
+.fab-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 1.6rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+}
+
+.fab-btn:hover {
+  transform: scale(1.12);
+  color: #ffffff;
+}
+
+.fab-whatsapp {
+  background: #25d366;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.fab-phone {
+  background: var(--gold-gradient);
+  color: #080c16;
+  box-shadow: 0 8px 25px rgba(197, 160, 89, 0.4);
+}
+
+.fab-tooltip {
+  position: absolute;
+  right: 68px;
+  background: #0a1128;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateX(10px);
+  border: 1px solid rgba(197, 160, 89, 0.3);
+}
+
+.fab-btn:hover .fab-tooltip {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Quick Booking Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 12, 22, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.modal-backdrop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-box {
+  background: #0f172a;
+  border: 1px solid rgba(197, 160, 89, 0.4);
+  border-radius: var(--radius-lg);
+  max-width: 580px;
+  width: 100%;
+  padding: 36px;
+  color: #ffffff;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.7), var(--gold-glow);
+  transform: scale(0.92);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.modal-backdrop.show .modal-box {
+  transform: scale(1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.modal-close-btn:hover {
+  background: var(--gold-primary);
+  color: #080c16;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 768px) {
+  .booking-engine-bar {
+    border-radius: var(--radius-sm);
+  }
+  .booking-input-group {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .floating-actions {
+    bottom: 20px;
+    right: 20px;
+  }
+  .fab-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+}

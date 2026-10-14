@@ -1,1116 +1,1578 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" /> -->
+    <title>Hotel Dayal Paradise | 4-Star Luxury Hotel in Gomti Nagar, Lucknow</title>
+    <meta
+      name="description"
+      content="Experience 4-star luxury at Hotel Dayal Paradise, Gomti Nagar, Lucknow. Deluxe Rooms, Signature Suites, Aadab Fine Dining, Jannat Rooftop Bar, and Royal Banquet Halls."
+    />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Browser CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
-      integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Custom Luxury Design System -->
+    <link rel="stylesheet" href="./css/style.css" />
+
     <style>
       swiper-container {
         width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        /* margin-left: 300px; */
+        padding-top: 20px;
+        padding-bottom: 40px;
       }
-
       swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 300px;
-        height: 300px;
+        width: 320px;
+        height: 280px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        border: 1px solid rgba(197, 160, 89, 0.3);
       }
-
       swiper-slide img {
         display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      swiper-slide:hover img {
+        transform: scale(1.08);
       }
     </style>
   </head>
-  <body>
-    <!-- top nav start -->
-    <div class="grid grid-cols-12 bg-blue-950 text-white text-sm">
-      <div
-        class="col-span-2 col-start-2 flex items-center justify-center gap-2 text-end my-4"
-      >
-        <i class="fa-solid fa-phone"></i> +91 8795838030
-      </div>
-      <div class="col-span-3 text-start gap-2 my-4">
-        <i class="fa-solid fa-location-dot"></i> Vipul Khand-V,Gomti Nagar,
-        Lucknow
-      </div>
-      <div class="col-span-2 gap-2 my-4">
-        <i class="fa-solid fa-envelope"></i> reservation@dayalparadise.com
-      </div>
-      <div class="col-span-3 text-center my-4 col-start-9">
-        <a href="#" class="bg-sky-100 text-blue-950 px-3 py-1"
-          >BOOK YOUR ROOM</a
-        >
-      </div>
-    </div>
-    <!-- top nav end -->
-
-    <!-- mid nav start  -->
-    <div class="grid grid-cols-12 sticky top-0 z-50 bg-slate-50">
-      <div class="col-span-12">
-        <nav class="bg-neutral-primary w-full z-20 top-0 start-0">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#d4af37] selection:text-[#070c18]">
+    <!-- TOP NOTIFICATION & CONTACT BAR -->
+    <header class="royal-topbar text-xs text-slate-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
+        <!-- Contact Information -->
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+          <a
+            href="tel:+918795838030"
+            class="topbar-link"
           >
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img src="./images/logo.png" class="h-15" alt="Flowbite Logo" />
-            </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                  d="M5 7h14M5 12h14M5 17h14"
-                />
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./aboutus.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >suite & rooms</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./dining.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Dining</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./b&l.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >banquets and lawn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./gallery.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >gallery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >contact us</a
-                  >
-                </li>
-              </ul>
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span class="font-medium">+91 8795838030</span>
+          </a>
+          <a
+            href="https://maps.google.com/?q=Hotel+Dayal+Paradise+Gomti+Nagar+Lucknow"
+            target="_blank"
+            class="hidden md:flex topbar-link"
+          >
+            <i class="fa-solid fa-location-dot text-xs"></i>
+            <span>Vipul Khand-V, Gomti Nagar, Lucknow</span>
+          </a>
+          <a
+            href="mailto:reservation@dayalparadise.com"
+            class="hidden sm:flex topbar-link"
+          >
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span>reservation@dayalparadise.com</span>
+          </a>
+        </div>
+
+        <!-- Quick Action & Royal CTA -->
+        <div class="flex items-center gap-4 ml-auto">
+          <div class="hidden lg:flex items-center gap-3 text-slate-400">
+            <span class="text-xs uppercase tracking-widest text-[#dfc07b] font-semibold">Awadhi Royalty</span>
+            <span class="text-slate-600">|</span>
+            <a href="#" class="hover:text-[#fae9bd] transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-[#fae9bd] transition-colors"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="hover:text-[#fae9bd] transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <button
+            onclick="openBookingModal()"
+            class="btn-royal-stay"
+          >
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Your Stay</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- STICKY LUXURY NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 luxury-navbar shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Royal Hotel Logo Badge -->
+          <a href="./index.html" class="royal-logo-badge group" title="Hotel Dayal Paradise">
+            <img
+              src="./images/logo.png"
+              alt="Hotel Dayal Paradise Logo"
+            />
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div class="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+            <a href="./index.html" class="luxury-nav-link active">Home</a>
+            <a href="./aboutus.html" class="luxury-nav-link">About Us</a>
+            <a href="#rooms" class="luxury-nav-link">Suites & Rooms</a>
+            <a href="./dining.html" class="luxury-nav-link">Dining</a>
+            <a href="./b&l.html" class="luxury-nav-link">Banquets & Lawn</a>
+            <a href="./aminities.html" class="luxury-nav-link">Amenities</a>
+            <a href="./gallery.html" class="luxury-nav-link">Gallery</a>
+            <a href="#contact" class="luxury-nav-link">Contact</a>
+          </div>
+
+          <!-- Concierge Direct Desk -->
+          <div class="hidden xl:flex items-center pl-3">
+            <div class="royal-concierge-pill">
+              <div class="concierge-icon-circle">
+                <i class="fa-solid fa-headset"></i>
+              </div>
+              <div>
+                <p class="text-[9px] uppercase tracking-[0.18em] text-[#dfc07b] font-bold leading-none mb-1">24/7 Concierge</p>
+                <a href="tel:+918795838030" class="text-xs font-bold text-white hover:text-[#fae9bd] transition-colors leading-none tracking-wide">
+                  +91 8795838030
+                </a>
+              </div>
             </div>
           </div>
-        </nav>
+
+          <!-- Mobile Hamburger Button -->
+          <button
+            id="mobileMenuToggle"
+            type="button"
+            class="lg:hidden p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <i id="menuIcon" class="fa-solid fa-bars text-xl text-[#d4af37]"></i>
+          </button>
+        </div>
       </div>
-    </div>
-    <!-- mid nav end  -->
 
-    <!-- slider start -->
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden mobile-nav-drawer px-4 pt-3 pb-6 space-y-1.5">
+        <a href="./index.html" class="mobile-nav-link active">Home</a>
+        <a href="./aboutus.html" class="mobile-nav-link">About Us</a>
+        <a href="#rooms" class="mobile-nav-link">Suites & Rooms</a>
+        <a href="./dining.html" class="mobile-nav-link">Dining</a>
+        <a href="./b&l.html" class="mobile-nav-link">Banquets & Lawn</a>
+        <a href="./aminities.html" class="mobile-nav-link">Amenities</a>
+        <a href="./gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-3 border-t border-[#d4af37]/20 mt-2">
+          <button
+            onclick="openBookingModal()"
+            class="btn-royal-stay w-full justify-center py-2.5 text-xs"
+          >
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Room Now</span>
+          </button>
+        </div>
+      </div>
+    </nav>
 
-    <div id="animation-carousel" class="relative w-full" data-carousel="static">
-      <!-- Carousel wrapper -->
-      <div class="relative overflow-hidden rounded-base h-[800px]">
-        <!-- Item 1 -->
-        <div
-          class="hidden duration-200 ease-linear"
-          data-carousel-item="active"
-        >
+    <!-- HERO CAROUSEL SECTION -->
+    <section class="relative w-full h-[620px] sm:h-[720px] lg:h-[780px] overflow-hidden bg-[#070b19]">
+      <!-- Slides Container -->
+      <div id="heroSlider" class="relative w-full h-full">
+        <!-- Slide 1 -->
+        <div class="hero-slide absolute inset-0 opacity-100 transition-opacity duration-1000 ease-in-out">
           <img
             src="./images/1.jpg"
-            class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="Image 1"
+            alt="Hotel Dayal Paradise Exterior & Luxury Suite"
+            class="w-full h-full object-cover object-center scale-105 transition-transform duration-7000 ease-out"
           />
-          <div
-            class="absolute inset-0 flex flex-col items-center justify-center text-center"
-          >
-            <h1 class="text-white text-5xl mb-4 italic">
-              Welcome to Our Hotels
+          <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/50 to-black/30"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block text-[#e5c583] text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase mb-3 bg-[#0a1128]/70 px-4 py-1.5 rounded-full border border-[#c5a059]/40 backdrop-blur-md">
+              4-Star Premier Destination in Gomti Nagar
+            </span>
+            <h1 class="font-heading text-3xl sm:text-5xl md:text-6xl text-white font-bold tracking-wide leading-tight mb-4 drop-shadow-lg">
+              Comfort, Serenity & <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e5c583] via-[#c5a059] to-[#9e7b39]">Luxury</span>
             </h1>
-            <p class="text-white w-1/3">
-              Spacious, comfortable rooms and suite with multi cuisine
-              restaurant and many more..
+            <p class="text-slate-200 text-sm sm:text-lg max-w-2xl font-light mb-8 drop-shadow leading-relaxed">
+              Experience the timeless elegance of Awadhi royalty combined with contemporary luxury, located amidst the vibrant corporate and cultural heart of Lucknow.
             </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <button onclick="openBookingModal()" class="btn-gold">
+                <i class="fa-solid fa-calendar-check"></i> Book Online
+              </button>
+              <a href="#rooms" class="btn-gold-outline text-white border-white/60 hover:border-[#c5a059]">
+                Explore Suites
+              </a>
+            </div>
           </div>
         </div>
-        <!-- Item 2 -->
-        <div class="hidden duration-200 ease-linear" data-carousel-item>
+
+        <!-- Slide 2 -->
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out pointer-events-none">
           <img
             src="./images/2.jpg"
-            class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="Image 2"
+            alt="Signature Club Rooms Hotel Dayal Paradise"
+            class="w-full h-full object-cover object-center"
           />
-          <div
-            class="absolute inset-0 flex flex-col items-center justify-center text-center"
-          >
-            <h1 class="text-white text-5xl mb-4 italic">Club Rooms</h1>
-            <p class="text-white w-1/3">
-              Club Rooms are contemporary in new interior style, featuring
-              windows that capture natural light
+          <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/55 to-black/35"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block text-[#e5c583] text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase mb-3 bg-[#0a1128]/70 px-4 py-1.5 rounded-full border border-[#c5a059]/40 backdrop-blur-md">
+              Signature Accommodation
+            </span>
+            <h2 class="font-heading text-3xl sm:text-5xl md:text-6xl text-white font-bold tracking-wide leading-tight mb-4 drop-shadow-lg">
+              Bespoke <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e5c583] via-[#c5a059] to-[#9e7b39]">Club Rooms</span> & Suites
+            </h2>
+            <p class="text-slate-200 text-sm sm:text-lg max-w-2xl font-light mb-8 drop-shadow leading-relaxed">
+              Crafted with warm ambiance, designer lighting, plush queen beds, ergonomic workstations, and high-speed Wi-Fi for discerning travelers.
             </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <button onclick="openBookingModal('Club Room')" class="btn-gold">
+                <i class="fa-solid fa-bed"></i> Reserve Club Room
+              </button>
+              <a href="./aboutus.html" class="btn-gold-outline text-white border-white/60 hover:border-[#c5a059]">
+                Our Story
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="hero-slide absolute inset-0 opacity-0 transition-opacity duration-1000 ease-in-out pointer-events-none">
+          <img
+            src="./images/dinner.jpg"
+            alt="Aadab Multi-cuisine restaurant and rooftop"
+            class="w-full h-full object-cover object-center"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/55 to-black/35"></div>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block text-[#e5c583] text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase mb-3 bg-[#0a1128]/70 px-4 py-1.5 rounded-full border border-[#c5a059]/40 backdrop-blur-md">
+              Gourmet Awadhi Delicacies
+            </span>
+            <h2 class="font-heading text-3xl sm:text-5xl md:text-6xl text-white font-bold tracking-wide leading-tight mb-4 drop-shadow-lg">
+              Aadab Dining & <span class="text-transparent bg-clip-text bg-gradient-to-r from-[#e5c583] via-[#c5a059] to-[#9e7b39]">Jannat Lounge</span>
+            </h2>
+            <p class="text-slate-200 text-sm sm:text-lg max-w-2xl font-light mb-8 drop-shadow leading-relaxed">
+              Relish authentic Awadhi kebabs, royal curries, and hand-crafted beverages under starlit Lucknow skies at our acclaimed rooftop restaurant.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+              <a href="./dining.html" class="btn-gold">
+                <i class="fa-solid fa-utensils"></i> Discover Dining
+              </a>
+              <a href="./b&l.html" class="btn-gold-outline text-white border-white/60 hover:border-[#c5a059]">
+                Weddings & Lawns
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <!-- Slider controls -->
+
+      <!-- Slider Arrows -->
       <button
-        type="button"
-        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev
+        onclick="prevHeroSlide()"
+        class="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center border border-white/20 transition-all duration-300"
+        aria-label="Previous Slide"
       >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-5 h-5 text-white rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m15 19-7-7 7-7"
-            />
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
+        <i class="fa-solid fa-chevron-left text-sm"></i>
       </button>
       <button
-        type="button"
-        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next
+        onclick="nextHeroSlide()"
+        class="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-11 h-11 rounded-full bg-black/40 hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center border border-white/20 transition-all duration-300"
+        aria-label="Next Slide"
       >
-        <span
-          class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            class="w-5 h-5 text-white rtl:rotate-180"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            fill="none"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="m9 5 7 7-7 7"
-            />
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
+        <i class="fa-solid fa-chevron-right text-sm"></i>
       </button>
-    </div>
 
-    <!-- slider end -->
-    <!-- card sticky start -->
-    <div class="bg-black w-full flex justify-center">
-      <div class="mb-11 w-280 center">
-        <h1 class="bg-black text-yellow-400 text-3xl italic mt-11">
-          Welcome to Hotel Dayal Paradise
-        </h1>
-        <div
-          class="flex items-center gap-3 text-m leading-[50px] font-medium tracking-wide bg-black text-white italic"
-        >
-          <span>Comfort</span>
-          <span class="text-gray-400">|</span>
-          <span>Serenity</span>
-          <span class="text-gray-400">|</span>
-          <span>Luxury</span>
-          <span class="text-gray-400">|</span>
-          <span>Greenery</span>
-        </div>
-        <h1 class="bg-black text-white mt-10">
-          Dayal Paradise – A plush address of Comfort, Serenity, Luxury &
-          Greenery, is one of the premier hotels in Gomti Nagar Lucknow. Located
-          in the tranquil backdrops of Vipul Khand, Gomti Nagar, amidst
-          Multiplexes, Recreational Parks, and Corporate & Business Houses, it
-          is well connected to the Railway Station, City Bus Terminal & Airport.
-          An ideal abode for Vacations, Conferences, Weddings, or any other
-          events, it is also a preferred family room hotel in Lucknow, complete
-          with excellent facilities for a rewarding stay
-        </h1>
-        <!-- card section start -->
-
-        <div class="grid grid-cols-12 gap-4 mt-10">
-          <div
-            class="col-span-3 bg-black h-auto flex flex-col justify-center items-center text-center p-4"
-          >
-            <img class="h-20" src="./images/card1.png" alt="" />
-
-            <h1 class="text-2xl italic font-serif text-yellow-400 mt-4">
-              Stylish Rooms
-            </h1>
-
-            <p class="mt-3 text-gray-400 leading-relaxed">
-              Rooms are stylish and well-appointed, drop-down lights, wardrobe,
-              in-room hair dryer and many more.
-            </p>
-
-            <a
-              href="#"
-              class="mt-5 bg-lime-400 hover:bg-lime-500 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md"
-            >
-              VIEW MORE
-            </a>
-          </div>
-
-          <!-- card image 2 -->
-
-          <div
-            class="col-span-3 bg-black h-auto flex flex-col justify-center items-center text-center p-4"
-          >
-            <img class="h-20" src="./images/card2.png" alt="" />
-
-            <h1 class="text-2xl italic font-serif text-yellow-400 mt-4">
-              Stylish Rooms
-            </h1>
-
-            <p class="mt-3 text-gray-400 leading-relaxed">
-              Rooms are stylish and well-appointed, drop-down lights, wardrobe,
-              in-room hair dryer and many more.
-            </p>
-
-            <a
-              href="#"
-              class="mt-5 bg-lime-400 hover:bg-lime-500 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md"
-            >
-              VIEW MORE
-            </a>
-          </div>
-
-          <!-- card image 3 -->
-          <div
-            class="col-span-3 bg-black h-auto flex flex-col justify-center items-center text-center p-4"
-          >
-            <img class="h-20" src="./images/card3.png" alt="" />
-
-            <h1 class="text-2xl italic font-serif text-yellow-400 mt-4">
-              Stylish Rooms
-            </h1>
-
-            <p class="mt-3 text-gray-400 leading-relaxed">
-              Rooms are stylish and well-appointed, drop-down lights, wardrobe,
-              in-room hair dryer and many more.
-            </p>
-
-            <a
-              href="#"
-              class="mt-5 bg-lime-400 hover:bg-lime-500 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md"
-            >
-              VIEW MORE
-            </a>
-          </div>
-
-          <!-- card image 4 -->
-          <div
-            class="col-span-3 bg-black h-auto flex flex-col justify-center items-center text-center p-4"
-          >
-            <img class="h-20" src="./images/card4.png" alt="" />
-
-            <h1 class="text-2xl italic font-serif text-yellow-400 mt-4">
-              Stylish Rooms
-            </h1>
-
-            <p class="mt-3 text-gray-400 leading-relaxed">
-              Rooms are stylish and well-appointed, drop-down lights, wardrobe,
-              in-room hair dryer and many more.
-            </p>
-
-            <a
-              href="#"
-              class="mt-5 bg-lime-400 hover:bg-lime-500 text-white font-bold text-sm tracking-wide px-6 py-3 rounded-md"
-            >
-              VIEW MORE
-            </a>
-          </div>
-        </div>
-        <!-- card section end -->
+      <!-- Slider Indicators -->
+      <div class="absolute bottom-16 sm:bottom-20 left-1/2 -translate-x-1/2 z-20 flex gap-2.5">
+        <button onclick="setHeroSlide(0)" class="slider-dot w-8 h-1.5 rounded-full bg-[#c5a059] transition-all duration-300"></button>
+        <button onclick="setHeroSlide(1)" class="slider-dot w-3 h-1.5 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300"></button>
+        <button onclick="setHeroSlide(2)" class="slider-dot w-3 h-1.5 rounded-full bg-white/40 hover:bg-white/80 transition-all duration-300"></button>
       </div>
-    </div>
-    <!-- card sticky end -->
+    </section>
 
-    <!-- price card section start -->
-    <div class="bg-white w-full h-200 flex justify-center">
-      <div class="w-280 h-200 mt-30">
-        <!-- heading section start -->
-        <div class="flex justify-between items-end mb-8">
-          <div>
-            <h1 class="italic text-3xl text-gray-900">Rooms and Suits</h1>
-            <p>
-              Pick a room that best suits your taste and budget
-              <span
-                class="inline-block w-6 border-b-2 border-lime-500 ml-1"
-              ></span>
-            </p>
+    <!-- REAL-TIME FLOATING QUICK BOOKING ENGINE -->
+    <div class="relative z-30 max-w-6xl mx-auto px-4 -mt-10 sm:-mt-14 mb-16">
+      <div class="booking-engine-bar p-3 sm:p-5">
+        <form id="quickBookingForm" onsubmit="handleQuickBooking(event)" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 items-center">
+          <!-- Check-in -->
+          <div class="booking-input-group">
+            <label class="booking-label">
+              <i class="fa-regular fa-calendar text-[#c5a059]"></i> Check-in Date
+            </label>
+            <input
+              type="date"
+              id="bookingCheckIn"
+              class="booking-control"
+              required
+            />
           </div>
-          <div class="flex gap-1">
+
+          <!-- Check-out -->
+          <div class="booking-input-group">
+            <label class="booking-label">
+              <i class="fa-regular fa-calendar-check text-[#c5a059]"></i> Check-out Date
+            </label>
+            <input
+              type="date"
+              id="bookingCheckOut"
+              class="booking-control"
+              required
+            />
+          </div>
+
+          <!-- Room Category -->
+          <div class="booking-input-group">
+            <label class="booking-label">
+              <i class="fa-solid fa-bed text-[#c5a059]"></i> Room Category
+            </label>
+            <select id="bookingRoomType" class="booking-control">
+              <option value="Deluxe Room (₹4,499/night)">Deluxe Room - ₹4,499</option>
+              <option value="Club Room (₹5,999/night)">Club Room - ₹5,999</option>
+              <option value="Executive Suite (₹7,999/night)">Executive Suite - ₹7,999</option>
+              <option value="Presidential Suite (₹12,999/night)">Presidential Suite - ₹12,999</option>
+            </select>
+          </div>
+
+          <!-- Guests -->
+          <div class="booking-input-group">
+            <label class="booking-label">
+              <i class="fa-solid fa-users text-[#c5a059]"></i> Guests & Rooms
+            </label>
+            <select id="bookingGuests" class="booking-control">
+              <option value="1 Guest, 1 Room">1 Adult, 1 Room</option>
+              <option value="2 Guests, 1 Room" selected>2 Adults, 1 Room</option>
+              <option value="2 Adults + 1 Child">2 Adults + 1 Child</option>
+              <option value="Family (3+ Guests)">Family (3+ Guests)</option>
+            </select>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="p-2 sm:p-0">
             <button
-              class="bg-lime-400 hover:bg-lime-500 text-white w-9 h-9 items-center justify-center"
+              type="submit"
+              class="w-full btn-gold py-3 text-sm font-bold tracking-wider"
             >
-              <
-            </button>
-            <button
-              class="bg-lime-400 hover:bg-lime-500 text-white w-9 h-9 items-center justify-center"
-            >
-              >
+              <i class="fa-solid fa-magnifying-glass"></i> Check Rates
             </button>
           </div>
-        </div>
-        <!-- heading section end -->
-
-        <!-- slider card start -->
-        <div class="grid grid-cols-12 flex justify-center gap-6">
-          <!-- card1 -->
-          <div class="col-span-3">
-            <img src="./images/slidder1.jpg" alt="" />
-            <h1 class="text-2xl font-medium mt-3">Deluxe Rooms</h1>
-            <p class="mt-3">
-              Our Deluxe Rooms are stylish and well-appointed,drop down
-              lights,wardrobe etc
-            </p>
-            <div class="w-full">
-              <div class="flex justify-between items-center">
-                <a
-                  class="inline-flex items-center justify-center bg-green-500 text-white w-22 h-10 text-center py-2 rounded-md"
-                  href="#"
-                  >Details</a
-                >
-
-                <div class=" ">
-                  <strike class="text-3xl italic font-[40px]">Rs.8000</strike>
-                  <br />
-                  <p class="text-3xl italic font-[40px]">Rs.6000</p>
-
-                  <span>per night</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- card2 -->
-          <div class="col-span-3">
-            <img src="./images/slidder2.jpg" alt="" />
-            <h1 class="text-2xl font-medium mt-3">Deluxe Rooms</h1>
-            <p class="mt-3">
-              Our Deluxe Rooms are stylish and well-appointed,drop down
-              lights,wardrobe etc
-            </p>
-            <div class="w-full">
-              <div class="flex justify-between items-center">
-                <a
-                  class="inline-flex items-center justify-center bg-green-500 text-white w-22 h-10 text-center py-2 rounded-md"
-                  href="#"
-                  >Details</a
-                >
-                <div class=" ">
-                  <strike class="text-3xl italic font-[40px]">Rs.8000</strike>
-                  <br />
-                  <p class="text-3xl italic font-[40px]">Rs.6000</p>
-
-                  <span>per night</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- card3 -->
-          <div class="col-span-3">
-            <img src="./images/slidder3.jpg" alt="" />
-            <h1 class="text-2xl font-medium mt-3">Deluxe Rooms</h1>
-            <p class="mt-3">
-              Our Deluxe Rooms are stylish and well-appointed,drop down
-              lights,wardrobe etc
-            </p>
-            <div class="w-full">
-              <div class="flex justify-between items-center">
-                <a
-                  class="inline-flex items-center justify-center bg-green-500 text-white w-22 h-10 text-center py-2 rounded-md"
-                  href="#"
-                  >Details</a
-                >
-                <div class=" ">
-                  <strike class="text-3xl italic font-[40px]">Rs.8000</strike>
-                  <br />
-                  <p class="text-3xl italic font-[40px]">Rs.6000</p>
-
-                  <span>per night</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- card4 -->
-          <div class="col-span-3">
-            <img src="./images/slidder4.jpg" alt="" />
-            <h1 class="text-2xl font-medium mt-3">Deluxe Rooms</h1>
-            <p class="mt-3">
-              Our Deluxe Rooms are stylish and well-appointed,drop down
-              lights,wardrobe etc
-            </p>
-            <div class="w-full">
-              <div class="flex justify-between items-center">
-                <a
-                  class="inline-flex items-center justify-center bg-green-500 text-white w-22 h-10 text-center py-2 rounded-md"
-                  href="#"
-                  >Details</a
-                >
-                <div class=" ">
-                  <strike class="text-3xl italic font-[40px]">Rs.8000</strike>
-                  <br />
-                  <p class="text-3xl italic font-[40px]">Rs.6000</p>
-
-                  <span>per night</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- slider card end -->
+        </form>
       </div>
     </div>
-    <!-- price card section end -->
 
-    <!-- bg-image section start -->
+    <!-- WELCOME & 4 LUXURY PILLARS SECTION -->
+    <section class="bg-[#080c16] text-white py-20 px-4 sm:px-6 lg:px-8 border-t border-b border-[#c5a059]/20 relative overflow-hidden">
+      <!-- Ambient Glow Background -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-[#c5a059]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
-    <div
-      class="grid grid-cols-12 bg-[url('./images/timer.jpg')] w-full h-[300px] bg-cover bg-center bg-fixed"
-    >
-      <div class="col-span-12 h-full w-full">
-        <!-- three col start -->
-        <div class="grid grid-cols-12 h-full">
-          <!-- 1st column -->
-          <div class="col-span-3 col-start-2 flex items-center">
-            <div class=" ">
-              <span
-                class="inline-block w-16 border-b-4 border-white ml-1"
-              ></span>
-              <h1 class="font-medium text-5xl text-white">12000</h1>
-            </div>
-            <div class="ml-5 mt-5 text-lime-500">
-              <p>+FB</p>
-              <p>LIKES</p>
-            </div>
-          </div>
-
-          <!-- second column -->
-          <div class="col-span-3 flex items-center">
-            <div class=" ">
-              <span
-                class="inline-block w-16 border-b-4 border-white ml-1"
-              ></span>
-              <h1 class="font-medium text-5xl text-white">10000</h1>
-            </div>
-            <div class="ml-5 mt-5 text-lime-500">
-              <p>+FB</p>
-              <p>CHECK IN'S</p>
-            </div>
-          </div>
-          <!-- third column -->
-          <div class="col-span-5 flex items-center">
-            <div class=" ">
-              <span
-                class="inline-block w-16 border-b-4 border-white ml-1"
-              ></span>
-              <h1 class="font-medium text-5xl text-white">1000</h1>
-            </div>
-            <div class="ml-5 mt-5 text-lime-500">
-              <p>+GUEST</p>
-              <p>REVIEWS</p>
-            </div>
-          </div>
-          <!-- three col end -->
-        </div>
-      </div>
-    </div>
-    <!-- white section start -->
-    <div class="grid grid-cols-12">
-      <!-- LEFT -->
-      <div class="col-span-4 col-start-2 bg-white">
-        <h1 class="text-black font-medium text-4xl italic mt-20">
-          Driving Direction
-          <span
-            class="inline-block w-16 border-b-2 border-lime-500 ml-1"
-          ></span>
-        </h1>
-        <p class="text-black mt-8">
-          Want to visit us? let us help you to find the directions.
-        </p>
-        <img class="mt-10 ml-3" src="./images/map.png" alt="" />
-        <!-- Distance -->
-        <div class="grid grid-cols-2 mt-8">
-          <div class="">
-            <h2 class="text-5xl text-black">
-              23.3 <span class="text-2xl">Km</span>
-              <span class="text-xl ms-10">|</span>
-            </h2>
-
-            <p class="text-gray-500">From Lucknow Airport</p>
-            <!-- samjh nhi aa rha line kaise lagau -->
-          </div>
-
-          <div class="">
-            <h2 class="text-5xl text-black">
-              9.8 <span class="text-2xl">Km</span>
-            </h2>
-            <p class="text-gray-500">From Charbagh Rly Stn</p>
-          </div>
-        </div>
-
-        <button
-          class="hover:bg-lime-500 mt-10 bg-lime-400 rounded-md text-white px-6 py-2"
-        >
-          VIEW DIRECTIONS
-        </button>
-      </div>
-
-      <!-- RIGHT -->
-      <div class="col-span-6 bg-white h-[600px]">
-        <h1 class="text-black font-medium text-4xl italic mt-20">
-          Our Core Values
-          <span
-            class="inline-block w-16 border-b-2 border-lime-500 ml-1"
-          ></span>
-        </h1>
-
-        <!-- accordion start -->
-
-        <div
-          id="accordion-collapse"
-          data-accordion="collapse"
-          class="overflow-hidden shadow-xs mt-10"
-        >
-          <h2 id="accordion-collapse-heading-1">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-1"
-              aria-expanded="true"
-              aria-controls="accordion-collapse-body-1"
-            >
-              <span class="font-bold text-xl">OUR MISSION</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
+      <div class="max-w-7xl mx-auto relative z-10">
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <span class="text-[#c5a059] text-xs sm:text-sm uppercase tracking-[0.25em] font-semibold">
+            Gomti Nagar's Crown Jewel
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mt-2 text-white">
+            Welcome to Hotel Dayal Paradise
           </h2>
-          <div
-            id="accordion-collapse-body-1"
-            class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
-            aria-labelledby="accordion-collapse-heading-1"
-          >
-            <div class="flex justify-between">
-              <img class="mt-3" src="./images/core-values.png" alt="" />
-              <p class="mt-5 ml-5">
-                To provide best value for money to our customers in hospitality
-                services through our personalized services and creating an
-                opportunity for the organization to grow in it's segment
-              </p>
-            </div>
+          <div class="gold-divider-center my-4"></div>
+          <div class="flex items-center justify-center gap-3 text-sm text-[#e5c583] tracking-wider uppercase font-medium">
+            <span>Comfort</span>
+            <span class="text-[#c5a059]">•</span>
+            <span>Serenity</span>
+            <span class="text-[#c5a059]">•</span>
+            <span>Luxury</span>
+            <span class="text-[#c5a059]">•</span>
+            <span>Greenery</span>
           </div>
-          <!-- second heading -->
-          <h2 id="accordion-collapse-heading-2">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-2"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-2"
-            >
-              <span class="font-bold text-xl">OUR VISIONS</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-2"
-            class="hidden border border-s-0 border-e-0 border-t-0 border-b-default"
-            aria-labelledby="accordion-collapse-heading-2"
-          >
-            <div class="flex justify-between">
-              <img class="mt-3" src="./images/vision.jpg" alt="" />
-              <p class="mt-5 ml-5">
-                To work diligently to make the Hospitality a divine and
-                fullfiling experience. And to implement our experience in
-                Hospitality industry in all walks of life and society, to make
-                world a better place.
-              </p>
-            </div>
-          </div>
-          <h2 id="accordion-collapse-heading-3">
-            <button
-              type="button"
-              class="shadow-md hover:shadow-xl hover:bg-gray-200 transition duration-300 flex items-center justify-between w-full p-5 font-medium rtl:text-right text-body hover:text-heading gap-3"
-              data-accordion-target="#accordion-collapse-body-3"
-              aria-expanded="false"
-              aria-controls="accordion-collapse-body-3"
-            >
-              <span class="font-bold text-xl">OUR VALUES</span>
-              <svg
-                data-accordion-icon
-                class="w-5 h-5 rotate-180 shrink-0"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="m5 15 7-7 7 7"
-                />
-              </svg>
-            </button>
-          </h2>
-          <div
-            id="accordion-collapse-body-3"
-            class="hidden"
-            aria-labelledby="accordion-collapse-heading-3"
-          >
-            <div class="flex justify-between">
-              <img class="mt-3" src="./images/core-values (1).png" alt="" />
-              <p class="mt-5 ml-5">
-                To work diligently to make the Hospitality a divine and
-                fullfiling experience. And to implement our experience in
-                Hospitality industry in all walks of life and society, to make
-                world a better place.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- accordion end -->
-      </div>
-    </div>
-
-    <!-- white section end -->
-    <!-- bg-image section end -->
-    <!-- grid section start -->
-
-    <div
-      class="grid grid-cols-12 h-[600px] bg-[url('./images/grid-bg.jpg')] bg-cover bg-no-repeat bg-center"
-    >
-      <div class="col-span-10 col-start-2">
-        <!-- grid-heading-tart -->
-        <div class="grid grid-cols-12">
-          <div class="col-span-5 mt-20 text-white">
-            <h1 class="text-3xl italic font-medium">Our Gallery</h1>
-            <p class="mt-2 italic">
-              Pick a room that best suits your taste and budget
-              <span
-                class="inlixne-block w-12 border-b-3 border-lime-500"
-              ></span>
-            </p>
-          </div>
-        </div>
-        <!-- grid-heading-end -->
-        <div class="grid grid-cols-1 w-full">
-          <div class="col-span-1">
-            <swiper-container
-              class="mySwiper w-full"
-              pagination="true"
-              effect="coverflow"
-              grab-cursor="true"
-              centered-slides="true"
-              slides-per-view="3"
-              coverflow-effect-rotate="50"
-              coverflow-effect-stretch="0"
-              coverflow-effect-depth="100"
-              coverflow-effect-modifier="1"
-              coverflow-effect-slide-shadows="true"
-              navigation="true"
-              loop="true"
-            >
-              <swiper-slide>
-                <img src="./images/grid1.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid2.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid3.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid4.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid5.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid6.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid7.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid8.jpg" />
-              </swiper-slide>
-              <swiper-slide>
-                <img src="./images/grid1.jpg" />
-              </swiper-slide>
-            </swiper-container>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- grid section end -->
-
-    <!-- testinomial start -->
-    <div class="grid grid-cols-12 w-full bg-white">
-      <!-- left start -->
-      <div class="col-span-5 col-start-2">
-        <h1 class="text-3xl font-medium mt-20">
-          Testimonials
-          <span class="inline-block w-16 border-b-3 border-lime-500"></span>
-        </h1>
-      </div>
-      <!-- right start -->
-      <div class="col-span-5">
-        <h1 class="text-3xl font-medium mt-20 mb-10">
-          for events
-          <span class="inline-block w-16 border-b-3 border-lime-500"></span>
-        </h1>
-        <!-- row 1 -->
-        <div class="grid grid-cols-5">
-          <!-- number -->
-          <div class="col-span-1">
-            <div
-              class="w-24 h-20 bg-lime-500 border-4 border-lime-600 flex justify-center items-center"
-            >
-              <h1 class="text-4xl text-white">1</h1>
-            </div>
-          </div>
-          <!-- content -->
-          <div class="col-span-4">
-            <div>
-              <h1 class="font-medium mb-1">BANQUET HALLS</h1>
-              <p>
-                Our two Banquet halls in Gomti Nagar Lucknow offer a lavish
-                ambience with a fun feel that turns every gathering into a
-                memorable experience. Jashn is lawn-facing and has a capacity of
-                150 guests, while Jalsa can accommodate up to 500 people, making
-                them perfect for both intimate and grand events
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- row 2 -->
-
-        <div class="grid grid-cols-5 mt-6">
-          <!-- number -->
-          <div class="col-span-1">
-            <div
-              class="w-24 h-20 bg-lime-500 border-4 border-lime-600 flex justify-center items-center"
-            >
-              <h1 class="text-4xl text-white">2</h1>
-            </div>
-          </div>
-          <!-- content -->
-          <div class="col-span-4">
-            <div>
-              <h1 class="font-medium mb-1">BANQUET HALLS</h1>
-              <p>
-                Our two Banquet halls in Gomti Nagar Lucknow offer a lavish
-                ambience with a fun feel that turns every gathering into a
-                memorable experience. Jashn is lawn-facing and has a capacity of
-                150 guests, while Jalsa can accommodate up to 500 people, making
-                them perfect for both intimate and grand events
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- row 3 -->
-
-        <div class="grid grid-cols-5 mt-6">
-          <!-- number -->
-          <div class="col-span-1">
-            <div
-              class="w-24 h-20 bg-lime-500 border-4 border-lime-600 flex justify-center items-center"
-            >
-              <h1 class="text-4xl text-white">3</h1>
-            </div>
-          </div>
-          <!-- content -->
-          <div class="col-span-4">
-            <div>
-              <h1 class="font-medium mb-1">BANQUET HALLS</h1>
-              <p>
-                Our two Banquet halls in Gomti Nagar Lucknow offer a lavish
-                ambience with a fun feel that turns every gathering into a
-                memorable experience. Jashn is lawn-facing and has a capacity of
-                150 guests, while Jalsa can accommodate up to 500 people, making
-                them perfect for both intimate and grand events
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- testinomial end -->
-
-    <!-- four image grid start -->
-    <div class="grid grid-cols-12">
-      <!-- left -->
-
-      <div
-        class="col-span-6 bg-[url('./images/p-3.jpg')] w-full h-[1100px] bg-contain bg-no-repeat bg-fixed"
-      >
-        <!-- <img src="./images/p-2.jpg" alt=""> -->
-        <!-- upper side -->
-        <div class="h-1/2 relative">
-          <img
-            src="./images/p-1.jpg"
-            class="w-full h-full object-cover"
-            alt=""
-          />
-
-          <!-- dark overlay -->
-          <div class="absolute inset-0 bg-black/50"></div>
-
-          <!-- text -->
-          <div class="absolute top-40 left-50 text-white">
-            <h1 class="text-4xl italic">Accommodation</h1>
-            <p class="mr-10 mt-6">
-              Our Deluxe Rooms are stylish and well-appointed, drop-down lights,
-              wardrobe, in-room hair dryer, ironing board, complimentary
-              high-speed Internet and thermostat control. Deluxe Rooms Offer a
-              choice of one Queen Bed or two twin beds and the average size of
-              one room is 30 square meters.
-            </p>
-          </div>
-        </div>
-        <!-- lower side -->
-        <div class="relative">
-          <!-- <div class="absolute inset-0 bg-black/50"></div> -->
-          <div class="absolute text-white top-40 left-50">
-            <h1 class="text-4xl italic">Conference Hall</h1>
-            <p class="mr-10 mt-6">
-              If you're in the business of impressing then Dayal Paradise has
-              superior facilities to suite any function - from private meeting
-              rooms to large conference and event halls. All thoughtfully
-              appointed spaces and amenities.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- right -->
-      <div
-        class="col-span-6 bg-[url('./images/p-2.jpg')] w-full h-[1100px] bg-contain bg-right bg-no-repeat bg-fixed"
-      >
-        <!-- upper side -->
-        <div class="relative h-1/2">
-          <!-- <div class="absolute inset-0 bg-black/50"></div> -->
-          <div class="absolute text-white top-40 left-30">
-            <h1 class="text-4xl italic">amenities</h1>
-            <p class="mr-10 mt-6">
-              Hotel is well equipped with all the features a 4 star hotel should
-              possess. Considering the Comfort, Class, Luxury and Serenity of
-              our gusts we have tried to provide every possible amenity.
-            </p>
-          </div>
-        </div>
-
-        <!-- lower side -->
-        <div class="h-1/2 relative">
-          <img
-            src="./images/p-4.jpg"
-            class="w-full h-full object-cover"
-            alt=""
-          />
-
-          <!-- dark overlay -->
-          <div class="absolute inset-0 bg-black/50"></div>
-
-          <!-- text -->
-          <div class="absolute top-40 left-30 text-white">
-            <h1 class="text-4xl italic">Dining</h1>
-            <p class="mr-10 mt-6">
-              "AADAB" MULTI-CUISINE RESTAURANT & BAR, Adab a Multi Cuisine
-              Restaurant, with seating capacity of sixty covers in a table
-              combination of four each make a comfortable dining for the Family,
-              Couples and small gatherings
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- four image grid end -->
-
-    <!-- footer section start -->
-
-    <footer class="bg-[#1f1f1f] text-gray-400">
-      <div class="grid grid-cols-12 max-w-7xl mx-auto py-16 gap-8">
-        <!-- LOGO -->
-        <div class="col-span-4">
-          <img src="./images/footerlogo.png" class="w-80" alt="Logo" />
-
-          <p class="mt-5">Comfort | Serenity | Luxury | Greenery</p>
-
-          <!-- social icons -->
-          <div class="flex gap-6 mt-16">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
-        </div>
-
-        <!-- EXPLORE -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">EXPLORE</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Suite & Rooms</p>
-          <p class="mb-4">Banquets & Lawn</p>
-          <p class="mb-4">Amenities</p>
-          <p class="mb-4">Gallery</p>
-          <p>Careers</p>
-        </div>
-
-        <!-- QUICK LINKS -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">QUICK LINKS</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Packages</p>
-          <p class="mb-4">Conference</p>
-          <p class="mb-4">About Us</p>
-          <p class="mb-4">Terms & Conditions</p>
-          <p class="mb-4">Privacy Policy</p>
-          <p class="mb-4">Cancellation Policy</p>
-          <p>Disclaimer</p>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="col-span-4">
-          <h2 class="text-white text-xl italic font-semibold">CONTACT US</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-6">
-            📍 HOTEL DAYAL PARADISE <br />
-            Vipul Khand - V, Gomti Nagar, Lucknow
+          <p class="text-slate-400 mt-6 leading-relaxed font-light text-base sm:text-lg">
+            Nestled in the tranquil greens of Vipul Khand, Gomti Nagar, amidst recreational parks, corporate headquarters, and shopping multiplexes, Hotel Dayal Paradise offers seamless connectivity to Lucknow Airport, Railway Station, and Shaheed Path. An oasis of calm designed for business travelers, grand family vacations, and regal weddings.
           </p>
+        </div>
 
-          <p class="mb-6">📞 +91 8795838030</p>
+        <!-- 4 Distinct Highlight Cards (Fixing old duplicate placeholders) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1: Rooms -->
+          <div class="luxury-card flex flex-col items-center text-center">
+            <div class="w-18 h-18 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 flex items-center justify-center mb-6">
+              <img src="./images/card1.png" alt="Signature Rooms" class="h-10 w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-xl text-[#e5c583] font-semibold mb-3">
+              Opulent Rooms & Suites
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light flex-grow">
+              55 well-appointed rooms featuring drop-down designer lighting, custom wardrobes, ergonomic workspaces, and 24/7 in-room dining.
+            </p>
+            <a href="#rooms" class="btn-gold-outline text-xs w-full">
+              Explore Rooms
+            </a>
+          </div>
 
-          <p>✉ Reservation@Dayalparadise.Com</p>
+          <!-- Card 2: Dining -->
+          <div class="luxury-card flex flex-col items-center text-center">
+            <div class="w-18 h-18 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 flex items-center justify-center mb-6">
+              <img src="./images/card2.png" alt="Aadab Restaurant" class="h-10 w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-xl text-[#e5c583] font-semibold mb-3">
+              Aadab Fine Dining
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light flex-grow">
+              Indulge in authentic royal Awadhi cuisine, multi-cuisine delicacies, and refreshing mocktails at Aadab Restaurant & Jannat Rooftop Bar.
+            </p>
+            <a href="./dining.html" class="btn-gold-outline text-xs w-full">
+              View Menu
+            </a>
+          </div>
+
+          <!-- Card 3: Banquets -->
+          <div class="luxury-card flex flex-col items-center text-center">
+            <div class="w-18 h-18 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 flex items-center justify-center mb-6">
+              <img src="./images/card3.png" alt="Banquets & Lawns" class="h-10 w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-xl text-[#e5c583] font-semibold mb-3">
+              Banquets & Lawns
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light flex-grow">
+              Grand celebratory spaces including Jashn (150 guests) and Jalsa (500 guests) with lush lawns, ideal for royal weddings and summits.
+            </p>
+            <a href="./b&l.html" class="btn-gold-outline text-xs w-full">
+              Event Booking
+            </a>
+          </div>
+
+          <!-- Card 4: Amenities -->
+          <div class="luxury-card flex flex-col items-center text-center">
+            <div class="w-18 h-18 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 flex items-center justify-center mb-6">
+              <img src="./images/card4.png" alt="Amenities & Concierge" class="h-10 w-auto object-contain" />
+            </div>
+            <h3 class="font-heading text-xl text-[#e5c583] font-semibold mb-3">
+              Wellness & Concierge
+            </h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6 font-light flex-grow">
+              Complimentary high-speed Wi-Fi, airport transfers, doctor on call, valet parking, and personalized round-the-clock concierge services.
+            </p>
+            <a href="./aminities.html" class="btn-gold-outline text-xs w-full">
+              All Amenities
+            </a>
+          </div>
         </div>
       </div>
-      <!-- Bottom Footer -->
-      <div class="border-t border-gray-700 mx-16 mt-10">
-        <p class="text-gray-500 py-8">
-          © Hotel Dayal Paradise. All rights reserved.
-        </p>
+    </section>
+
+    <!-- ROOMS & SUITES SECTION -->
+    <section id="rooms" class="py-24 bg-slate-100 text-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
+          <div>
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">
+              Luxury Accommodations
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              Rooms & Signature Suites
+            </h2>
+            <div class="gold-divider mt-3"></div>
+            <p class="text-slate-600 mt-3 max-w-xl text-base">
+              Each room is tailored for absolute relaxation, boasting high-speed Wi-Fi, plush bedding, premium bath amenities, and panoramic city views.
+            </p>
+          </div>
+
+          <div class="flex gap-2">
+            <button
+              onclick="scrollRooms('left')"
+              class="w-11 h-11 rounded-full border border-slate-300 bg-white hover:bg-[#c5a059] hover:text-[#080c16] hover:border-transparent text-slate-700 flex items-center justify-center shadow transition-all duration-300 cursor-pointer"
+              aria-label="Previous Rooms"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              onclick="scrollRooms('right')"
+              class="w-11 h-11 rounded-full border border-slate-300 bg-white hover:bg-[#c5a059] hover:text-[#080c16] hover:border-transparent text-slate-700 flex items-center justify-center shadow transition-all duration-300 cursor-pointer"
+              aria-label="Next Rooms"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Rooms Grid / Scrollable Container -->
+        <div
+          id="roomsContainer"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 overflow-x-auto pb-4 scroll-smooth"
+        >
+          <!-- Room 1: Deluxe Room -->
+          <div class="room-card group">
+            <div class="image-wrapper">
+              <img src="./images/slidder1.jpg" alt="Deluxe Room" />
+              <span class="room-badge">Popular Choice</span>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="amenity-tag"><i class="fa-solid fa-bed text-[#c5a059]"></i> Queen Bed</span>
+                <span class="amenity-tag"><i class="fa-solid fa-wifi text-[#c5a059]"></i> Free Wi-Fi</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2 group-hover:text-[#c5a059] transition-colors">
+                Deluxe Room
+              </h3>
+              <p class="text-slate-600 text-sm mb-5 font-light leading-relaxed">
+                Tastefully furnished 320 sq.ft room with drop-down lighting, wardrobe, mini-bar, and in-room tea/coffee maker.
+              </p>
+              <div class="mt-auto pt-4 border-t border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-slate-400 line-through">₹6,500</span>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    ₹4,499 <span class="text-xs font-normal text-slate-500 font-sans">/ night</span>
+                  </div>
+                </div>
+                <button
+                  onclick="openBookingModal('Deluxe Room (₹4,499/night)')"
+                  class="btn-gold px-4 py-2 text-xs"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 2: Club Room -->
+          <div class="room-card group">
+            <div class="image-wrapper">
+              <img src="./images/slidder2.jpg" alt="Club Room" />
+              <span class="room-badge">City View</span>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="amenity-tag"><i class="fa-solid fa-crown text-[#c5a059]"></i> King Bed</span>
+                <span class="amenity-tag"><i class="fa-solid fa-mug-hot text-[#c5a059]"></i> Breakfast</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2 group-hover:text-[#c5a059] transition-colors">
+                Club Room
+              </h3>
+              <p class="text-slate-600 text-sm mb-5 font-light leading-relaxed">
+                Contemporary design spanning 400 sq.ft with panoramic natural sunlight windows, work desk, and enhanced bath essentials.
+              </p>
+              <div class="mt-auto pt-4 border-t border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-slate-400 line-through">₹8,500</span>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    ₹5,999 <span class="text-xs font-normal text-slate-500 font-sans">/ night</span>
+                  </div>
+                </div>
+                <button
+                  onclick="openBookingModal('Club Room (₹5,999/night)')"
+                  class="btn-gold px-4 py-2 text-xs"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 3: Executive Suite -->
+          <div class="room-card group">
+            <div class="image-wrapper">
+              <img src="./images/slidder3.jpg" alt="Executive Suite" />
+              <span class="room-badge">Spacious Suite</span>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="amenity-tag"><i class="fa-solid fa-couch text-[#c5a059]"></i> Living Room</span>
+                <span class="amenity-tag"><i class="fa-solid fa-bath text-[#c5a059]"></i> Bathtub</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2 group-hover:text-[#c5a059] transition-colors">
+                Executive Suite
+              </h3>
+              <p class="text-slate-600 text-sm mb-5 font-light leading-relaxed">
+                550 sq.ft luxury haven offering a separate master bedroom and cozy living lounge, complete with plush sofa and deep soaking tub.
+              </p>
+              <div class="mt-auto pt-4 border-t border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-slate-400 line-through">₹11,000</span>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    ₹7,999 <span class="text-xs font-normal text-slate-500 font-sans">/ night</span>
+                  </div>
+                </div>
+                <button
+                  onclick="openBookingModal('Executive Suite (₹7,999/night)')"
+                  class="btn-gold px-4 py-2 text-xs"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Room 4: Presidential Suite -->
+          <div class="room-card group">
+            <div class="image-wrapper">
+              <img src="./images/slidder4.jpg" alt="Presidential Suite" />
+              <span class="room-badge">VIP Luxury</span>
+            </div>
+            <div class="p-6 flex flex-col flex-grow">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="amenity-tag"><i class="fa-solid fa-gem text-[#c5a059]"></i> 850 Sq.Ft</span>
+                <span class="amenity-tag"><i class="fa-solid fa-bell-concierge text-[#c5a059]"></i> Butler</span>
+              </div>
+              <h3 class="font-heading text-xl font-bold text-[#0a1128] mb-2 group-hover:text-[#c5a059] transition-colors">
+                Presidential Suite
+              </h3>
+              <p class="text-slate-600 text-sm mb-5 font-light leading-relaxed">
+                The pinnacle of royal indulgence. Lavish master bedroom, private dining space, skyline views, and priority check-in privileges.
+              </p>
+              <div class="mt-auto pt-4 border-t border-slate-200 flex items-center justify-between">
+                <div>
+                  <span class="text-xs text-slate-400 line-through">₹18,000</span>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    ₹12,999 <span class="text-xs font-normal text-slate-500 font-sans">/ night</span>
+                  </div>
+                </div>
+                <button
+                  onclick="openBookingModal('Presidential Suite (₹12,999/night)')"
+                  class="btn-gold px-4 py-2 text-xs"
+                >
+                  Book Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / MILESTONES PARALLAX SECTION -->
+    <section class="relative bg-[url('./images/timer.jpg')] bg-cover bg-center bg-fixed py-20 text-white">
+      <div class="absolute inset-0 bg-[#070b19]/85 backdrop-blur-[2px]"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+          <!-- Stat 1 -->
+          <div class="p-4 border-r border-[#c5a059]/20 last:border-none">
+            <div class="w-12 h-1 bg-[#c5a059] mx-auto mb-4 rounded-full"></div>
+            <div class="font-heading text-4xl sm:text-5xl font-bold text-white mb-2">15,000+</div>
+            <p class="text-xs sm:text-sm uppercase tracking-widest text-[#e5c583] font-semibold">Happy Guests Hosted</p>
+          </div>
+
+          <!-- Stat 2 -->
+          <div class="p-4 border-r border-[#c5a059]/20 last:border-none">
+            <div class="w-12 h-1 bg-[#c5a059] mx-auto mb-4 rounded-full"></div>
+            <div class="font-heading text-4xl sm:text-5xl font-bold text-white mb-2">500+</div>
+            <p class="text-xs sm:text-sm uppercase tracking-widest text-[#e5c583] font-semibold">Weddings & Galas</p>
+          </div>
+
+          <!-- Stat 3 -->
+          <div class="p-4 border-r border-[#c5a059]/20 last:border-none">
+            <div class="w-12 h-1 bg-[#c5a059] mx-auto mb-4 rounded-full"></div>
+            <div class="font-heading text-4xl sm:text-5xl font-bold text-white mb-2">4.3 ★</div>
+            <p class="text-xs sm:text-sm uppercase tracking-widest text-[#e5c583] font-semibold">Google & TripAdvisor Rating</p>
+          </div>
+
+          <!-- Stat 4 -->
+          <div class="p-4">
+            <div class="w-12 h-1 bg-[#c5a059] mx-auto mb-4 rounded-full"></div>
+            <div class="font-heading text-4xl sm:text-5xl font-bold text-white mb-2">100%</div>
+            <p class="text-xs sm:text-sm uppercase tracking-widest text-[#e5c583] font-semibold">Awadhi Warmth & Care</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DRIVING DIRECTIONS & CORE VALUES SECTION -->
+    <section class="py-24 bg-white text-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          <!-- LEFT: Driving Directions & Landmark Distances -->
+          <div class="lg:col-span-6">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">
+              Strategic Prime Location
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              Driving Directions
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 mb-8 leading-relaxed">
+              Situated in the tranquil backdrop of Vipul Khand, Gomti Nagar. Quick connectivity through Shaheed Path, Lohia Path, and Amar Shaheed Path.
+            </p>
+
+            <!-- Landmark Distances Cards (Fixing old line issue) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+              <!-- Airport -->
+              <div class="landmark-card">
+                <div class="landmark-icon">
+                  <i class="fa-solid fa-plane-departure"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    23.3 <span class="text-sm font-normal text-slate-500 font-sans">Km</span>
+                  </div>
+                  <p class="text-xs text-slate-500 font-medium">From Lucknow Airport (CCS)</p>
+                  <span class="text-[11px] text-[#c5a059] font-semibold">~35 Mins via Shaheed Path</span>
+                </div>
+              </div>
+
+              <!-- Charbagh Railway Station -->
+              <div class="landmark-card">
+                <div class="landmark-icon">
+                  <i class="fa-solid fa-train"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    9.8 <span class="text-sm font-normal text-slate-500 font-sans">Km</span>
+                  </div>
+                  <p class="text-xs text-slate-500 font-medium">From Charbagh Rly Stn</p>
+                  <span class="text-[11px] text-[#c5a059] font-semibold">~20 Mins via Lohia Path</span>
+                </div>
+              </div>
+
+              <!-- Ekana Stadium -->
+              <div class="landmark-card">
+                <div class="landmark-icon">
+                  <i class="fa-solid fa-baseball-bat-ball"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    6.5 <span class="text-sm font-normal text-slate-500 font-sans">Km</span>
+                  </div>
+                  <p class="text-xs text-slate-500 font-medium">From Ekana Cricket Stadium</p>
+                  <span class="text-[11px] text-[#c5a059] font-semibold">~12 Mins Drive</span>
+                </div>
+              </div>
+
+              <!-- Gomti Riverfront -->
+              <div class="landmark-card">
+                <div class="landmark-icon">
+                  <i class="fa-solid fa-water"></i>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-[#0a1128] font-heading">
+                    3.5 <span class="text-sm font-normal text-slate-500 font-sans">Km</span>
+                  </div>
+                  <p class="text-xs text-slate-500 font-medium">From Gomti Riverfront Park</p>
+                  <span class="text-[11px] text-[#c5a059] font-semibold">~8 Mins Drive</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direction Actions -->
+            <div class="flex flex-wrap gap-4 items-center">
+              <a
+                href="https://maps.google.com/?q=Hotel+Dayal+Paradise+Vipul+Khand+Gomti+Nagar+Lucknow"
+                target="_blank"
+                class="btn-gold"
+              >
+                <i class="fa-solid fa-diamond-turn-right"></i> Open In Google Maps
+              </a>
+              <a
+                href="tel:+918795838030"
+                class="btn-gold-outline"
+              >
+                <i class="fa-solid fa-car"></i> Request Cab Assistance
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT: Core Values Accordion -->
+          <div class="lg:col-span-6">
+            <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">
+              Our Ethos & Principles
+            </span>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+              Our Core Values
+            </h2>
+            <div class="gold-divider my-3"></div>
+            <p class="text-slate-600 mb-6 leading-relaxed">
+              Hospitality is not just our business—it is a cherished cultural tradition deeply embedded in Awadhi etiquette (Tehzeeb).
+            </p>
+
+            <!-- Custom Smooth Accordion (Zero Flowbite Dependency) -->
+            <div class="space-y-4">
+              <!-- Item 1: DAYAL Acronym -->
+              <div class="custom-accordion-item active">
+                <button
+                  type="button"
+                  class="custom-accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-gem text-[#c5a059]"></i> What DAYAL Stands For
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <div class="text-sm text-slate-600 space-y-2 py-2">
+                    <p><strong class="text-[#0a1128]">D</strong> — Delicious Cuisine, Devotion to Service, Dignity & Discipline</p>
+                    <p><strong class="text-[#0a1128]">A</strong> — Accountable, Authentic, and Adorable Guest Care</p>
+                    <p><strong class="text-[#0a1128]">Y</strong> — Young-at-Heart, Yielding True Value for Every Rupee</p>
+                    <p><strong class="text-[#0a1128]">A</strong> — Affectionate Warmth & Awesomeness in Hospitality</p>
+                    <p><strong class="text-[#0a1128]">L</strong> — Luxury, Longevity, Loyalty & Inspiring Leadership</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Our Mission -->
+              <div class="custom-accordion-item">
+                <button
+                  type="button"
+                  class="custom-accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-compass text-[#c5a059]"></i> Our Sacred Mission
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <div class="flex items-start gap-4 py-2">
+                    <img src="./images/core-values.png" alt="Mission" class="w-16 h-16 object-contain hidden sm:block" />
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                      To deliver peerless value for money to every guest through deeply personalized hospitality, making Dayal Paradise a genuine "Home away from Home" for corporate guests, leisure travelers, and families alike.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Our Vision -->
+              <div class="custom-accordion-item">
+                <button
+                  type="button"
+                  class="custom-accordion-header"
+                  onclick="toggleAccordion(this)"
+                >
+                  <span class="flex items-center gap-3">
+                    <i class="fa-solid fa-eye text-[#c5a059]"></i> Our Grand Vision
+                  </span>
+                  <i class="fa-solid fa-chevron-down accordion-arrow"></i>
+                </button>
+                <div class="custom-accordion-content">
+                  <div class="flex items-start gap-4 py-2">
+                    <img src="./images/vision.jpg" alt="Vision" class="w-16 h-16 object-cover rounded-md hidden sm:block" />
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                      To set the benchmark for luxury boutique hospitality across Northern India by blending age-old royal Awadhi traditions with modern amenities and sustainable, green eco-friendly practices.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY COVERFLOW SECTION -->
+    <section class="py-24 bg-[#070b19] text-white relative overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
+            Visual Tour
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold mt-2 text-white">
+            Our Grand Gallery
+          </h2>
+          <div class="gold-divider-center my-3"></div>
+          <p class="text-slate-400 font-light text-sm sm:text-base">
+            Glimpse into the world of luxury: plush interiors, royal banquet setups, and serene rooftop ambiances.
+          </p>
+        </div>
+
+        <!-- Swiper Coverflow Gallery -->
+        <swiper-container
+          class="mySwiper w-full"
+          pagination="true"
+          pagination-clickable="true"
+          effect="coverflow"
+          grab-cursor="true"
+          centered-slides="true"
+          slides-per-view="auto"
+          coverflow-effect-rotate="35"
+          coverflow-effect-stretch="0"
+          coverflow-effect-depth="120"
+          coverflow-effect-modifier="1"
+          coverflow-effect-slide-shadows="true"
+          navigation="true"
+          loop="true"
+          autoplay-delay="3000"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide>
+            <img src="./images/grid1.jpg" alt="Hotel Interior" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid2.jpg" alt="Dining Ambiance" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid3.jpg" alt="Luxury Bedding" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid4.jpg" alt="Banquet Hall Setup" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid5.jpg" alt="Suite Lounge" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid6.jpg" alt="Lawn Evening Lights" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid7.jpg" alt="Conference Facilities" />
+          </swiper-slide>
+          <swiper-slide>
+            <img src="./images/grid8.jpg" alt="Rooftop Night View" />
+          </swiper-slide>
+        </swiper-container>
+
+        <div class="text-center mt-8">
+          <a href="./gallery.html" class="btn-gold-outline text-xs">
+            <i class="fa-regular fa-images"></i> View Complete High-Res Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS & GUEST REVIEWS SECTION (Fixing duplicate cards) -->
+    <section class="py-24 bg-slate-100 text-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Section Header -->
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">
+            Guest Impressions
+          </span>
+          <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+            What Our Guests Say
+          </h2>
+          <div class="gold-divider-center my-3"></div>
+          <p class="text-slate-600 font-light text-sm sm:text-base">
+            Hear from corporate executives, destination wedding families, and vacationers who experienced our signature hospitality.
+          </p>
+        </div>
+
+        <!-- 3 Authentic Testimonials with Real Photos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Review 1: Nitin Arora -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-xs text-slate-400 font-medium">Verified Stay</span>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "It's just an awesome place with delicious food. The rooftop Jannat restaurant and bar is top-notch with great music and city skyline views. Great hotel place to enjoy with family and friends in Gomti Nagar."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img
+                src="./images/nitinarora.png"
+                alt="Nitin Arora"
+                class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]"
+              />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Nitin Arora</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Family Vacationer • Lucknow</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2: Neeraj Tripathi -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-xs text-slate-400 font-medium">Verified Stay</span>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "Superb & beautiful place! Awesome Awadhi food, very supportive and courteous front desk staff. I strongly recommend Dayal Paradise to all my friends and family visiting Lucknow for business or weddings."
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img
+                src="./images/neerajtripathi.png"
+                alt="Neeraj Tripathi"
+                class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]"
+              />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Neeraj Tripathi</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Corporate Executive</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3: Kashish -->
+          <div class="testimonial-card flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <span class="text-xs text-slate-400 font-medium">Verified Stay</span>
+              </div>
+              <p class="text-slate-700 text-sm leading-relaxed italic mb-6">
+                "Hosted a 300-guest wedding in Jalsa Banquet Hall. The arrangements, decor, sound setup, and food quality were magnificent. Guests couldn't stop praising the royal treatment. Truly a 4-star experience!"
+              </p>
+            </div>
+            <div class="flex items-center gap-4 pt-4 border-t border-slate-200">
+              <img
+                src="./images/kashish.png"
+                alt="Kashish"
+                class="w-14 h-14 rounded-full object-cover border-2 border-[#c5a059]"
+              />
+              <div>
+                <h4 class="font-heading text-base font-bold text-[#0a1128]">Kashish</h4>
+                <p class="text-xs text-[#c5a059] font-medium">Wedding Organizer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESPONSIVE 4-GRID LUXURY SHOWCASE (Fixing old broken h-[1100px] layout) -->
+    <section class="bg-[#080c16] text-white py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Panel 1: Accommodation -->
+          <div class="group relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#c5a059]/20 shadow-xl">
+            <img
+              src="./images/p-1.jpg"
+              alt="Accommodation"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/70 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8">
+              <span class="text-xs uppercase tracking-widest text-[#c5a059] font-bold">Sleep In Luxury</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-bold mt-1 mb-2 text-white">
+                Accommodation
+              </h3>
+              <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">
+                Deluxe Rooms and Signature Suites equipped with high-speed Internet, thermostat control, queen/twin bedding, and 24/7 personalized room service.
+              </p>
+              <a href="#rooms" class="inline-flex items-center gap-2 text-xs uppercase font-bold text-[#e5c583] hover:text-white transition-colors">
+                Discover Rooms <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel 2: Conference & Events -->
+          <div class="group relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#c5a059]/20 shadow-xl">
+            <img
+              src="./images/p-3.jpg"
+              alt="Conference & Events"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/70 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8">
+              <span class="text-xs uppercase tracking-widest text-[#c5a059] font-bold">Business & Galas</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-bold mt-1 mb-2 text-white">
+                Conference & Banquets
+              </h3>
+              <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">
+                Superior conference rooms and expansive event halls equipped with audio-visual setups, high-speed Wi-Fi, and custom catering menus.
+              </p>
+              <a href="./b&l.html" class="inline-flex items-center gap-2 text-xs uppercase font-bold text-[#e5c583] hover:text-white transition-colors">
+                Plan An Event <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel 3: Premium Amenities -->
+          <div class="group relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#c5a059]/20 shadow-xl">
+            <img
+              src="./images/p-2.jpg"
+              alt="Hotel Amenities"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/70 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8">
+              <span class="text-xs uppercase tracking-widest text-[#c5a059] font-bold">Uncompromising Comfort</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-bold mt-1 mb-2 text-white">
+                4-Star Amenities
+              </h3>
+              <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">
+                Considering your comfort, class, and serenity, we provide valet parking, express laundry, 24/7 concierge, and airport transfers.
+              </p>
+              <a href="./aminities.html" class="inline-flex items-center gap-2 text-xs uppercase font-bold text-[#e5c583] hover:text-white transition-colors">
+                View All Facilities <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Panel 4: Dining -->
+          <div class="group relative h-[380px] sm:h-[420px] rounded-2xl overflow-hidden border border-[#c5a059]/20 shadow-xl">
+            <img
+              src="./images/p-4.jpg"
+              alt="Aadab Restaurant & Bar"
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#080c16] via-[#080c16]/70 to-transparent"></div>
+            <div class="absolute bottom-8 left-8 right-8">
+              <span class="text-xs uppercase tracking-widest text-[#c5a059] font-bold">Royal Culinary Journey</span>
+              <h3 class="font-heading text-2xl sm:text-3xl font-bold mt-1 mb-2 text-white">
+                Aadab & Rooftop Jannat
+              </h3>
+              <p class="text-slate-300 text-sm font-light leading-relaxed mb-4">
+                Sixty-cover multi-cuisine dining with authentic Awadhi dum pukht delicacies, sizzlers, and starlit rooftop mocktails & cocktails.
+              </p>
+              <a href="./dining.html" class="inline-flex items-center gap-2 text-xs uppercase font-bold text-[#e5c583] hover:text-white transition-colors">
+                Reserve A Table <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION (#contact) -->
+    <footer id="contact" class="bg-[#070b19] text-slate-400 border-t border-[#c5a059]/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          <!-- LOGO & BRAND -->
+          <div class="lg:col-span-4">
+            <a href="./index.html" class="inline-block mb-4">
+              <img src="./images/footerlogo.png" class="w-64 sm:w-72 object-contain" alt="Hotel Dayal Paradise Logo" />
+            </a>
+            <p class="text-sm text-[#e5c583] font-medium tracking-wide mb-4">
+              Comfort | Serenity | Luxury | Greenery
+            </p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6 font-light max-w-sm">
+              Hotel Dayal Paradise is one of Lucknow's most distinguished 4-star addresses in Gomti Nagar, renowned for Awadhi culinary excellence and personalized care.
+            </p>
+            <!-- Social Icons -->
+            <div class="flex gap-4">
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-facebook-f text-sm"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-instagram text-sm"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-x-twitter text-sm"></i>
+              </a>
+              <a href="#" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 hover:border-[#c5a059] hover:bg-[#c5a059] hover:text-[#080c16] text-white flex items-center justify-center transition-all duration-300">
+                <i class="fa-brands fa-linkedin-in text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- EXPLORE -->
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">EXPLORE</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="#rooms" class="hover:text-[#c5a059] transition-colors">Suite & Rooms</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059] transition-colors">Banquets & Lawn</a></li>
+              <li><a href="./dining.html" class="hover:text-[#c5a059] transition-colors">Aadab Restaurant</a></li>
+              <li><a href="./aminities.html" class="hover:text-[#c5a059] transition-colors">Amenities & Gym</a></li>
+              <li><a href="./gallery.html" class="hover:text-[#c5a059] transition-colors">Photo Gallery</a></li>
+              <li><a href="./aboutus.html" class="hover:text-[#c5a059] transition-colors">Our Story</a></li>
+            </ul>
+          </div>
+
+          <!-- QUICK LINKS -->
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">QUICK LINKS</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="#rooms" class="hover:text-[#c5a059] transition-colors">Wedding Packages</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059] transition-colors">Corporate Events</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Special Offers</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Terms & Conditions</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Privacy Policy</a></li>
+              <li><a href="#" class="hover:text-[#c5a059] transition-colors">Cancellation Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- CONTACT US -->
+          <div class="lg:col-span-4">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">CONTACT US</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-3.5 text-xs sm:text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-[#c5a059] mt-1 text-sm"></i>
+                <span>
+                  <strong>HOTEL DAYAL PARADISE</strong><br />
+                  Vipul Khand - V, Gomti Nagar, Lucknow, Uttar Pradesh 226010
+                </span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#c5a059] text-sm"></i>
+                <a href="tel:+918795838030" class="hover:text-[#c5a059] transition-colors">
+                  +91 8795838030 / +91 522 4059999
+                </a>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-envelope text-[#c5a059] text-sm"></i>
+                <a href="mailto:reservation@dayalparadise.com" class="hover:text-[#c5a059] transition-colors">
+                  reservation@dayalparadise.com
+                </a>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-clock text-[#c5a059] text-sm"></i>
+                <span>Check-in: 12:00 PM | Check-out: 11:00 AM</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM COPYRIGHT -->
+        <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+          <p>© 2026 Hotel Dayal Paradise Lucknow. All rights reserved.</p>
+          <p class="flex items-center gap-1">
+            Crafted with Awadhi Tehzeeb & Luxury Design Standards
+          </p>
+        </div>
       </div>
     </footer>
 
-    <!-- footer section end -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
+    <!-- FLOATING ACTIONS (WhatsApp & Call) -->
+    <div class="floating-actions">
+      <!-- WhatsApp Floating Button -->
+      <a
+        href="https://wa.me/918795838030?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20room%20booking%20at%20Hotel%20Dayal%20Paradise"
+        target="_blank"
+        class="fab-btn fab-whatsapp"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="fab-tooltip">Chat with Reception</span>
+      </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+      <!-- Quick Call Button -->
+      <a
+        href="tel:+918795838030"
+        class="fab-btn fab-phone"
+        aria-label="Call Reception"
+      >
+        <i class="fa-solid fa-phone"></i>
+        <span class="fab-tooltip">Call +91 8795838030</span>
+      </a>
+    </div>
+
+    <!-- QUICK RESERVATION MODAL -->
+    <div id="bookingModal" class="modal-backdrop">
+      <div class="modal-box">
+        <button
+          onclick="closeBookingModal()"
+          class="modal-close-btn"
+          aria-label="Close Modal"
+        >
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="text-center mb-6">
+          <span class="text-[#c5a059] text-xs uppercase tracking-widest font-semibold">Direct Hotel Reservation</span>
+          <h3 class="font-heading text-2xl font-bold mt-1 text-white">Reserve Your Stay</h3>
+          <p class="text-xs text-slate-400 mt-1">Best Rate Guarantee • Instant Confirmation via WhatsApp / Front Desk</p>
+        </div>
+
+        <form id="modalReservationForm" onsubmit="submitModalReservation(event)" class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Guest Full Name</label>
+              <input
+                type="text"
+                id="modalGuestName"
+                placeholder="Enter your name"
+                required
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              />
+            </div>
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Mobile / WhatsApp No.</label>
+              <input
+                type="tel"
+                id="modalGuestPhone"
+                placeholder="+91 9876543210"
+                required
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Check-in Date</label>
+              <input
+                type="date"
+                id="modalCheckIn"
+                required
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              />
+            </div>
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Check-out Date</label>
+              <input
+                type="date"
+                id="modalCheckOut"
+                required
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Room Category</label>
+              <select
+                id="modalRoomType"
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              >
+                <option value="Deluxe Room (₹4,499/night)">Deluxe Room (₹4,499/night)</option>
+                <option value="Club Room (₹5,999/night)">Club Room (₹5,999/night)</option>
+                <option value="Executive Suite (₹7,999/night)">Executive Suite (₹7,999/night)</option>
+                <option value="Presidential Suite (₹12,999/night)">Presidential Suite (₹12,999/night)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Guests & Rooms</label>
+              <select
+                id="modalGuests"
+                class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+              >
+                <option value="1 Guest, 1 Room">1 Adult, 1 Room</option>
+                <option value="2 Guests, 1 Room" selected>2 Adults, 1 Room</option>
+                <option value="2 Adults + 1 Child">2 Adults + 1 Child</option>
+                <option value="Family Suite (3+ Guests)">Family Suite (3+ Guests)</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase text-[#e5c583] font-semibold mb-1">Special Requests (Optional)</label>
+            <textarea
+              id="modalNotes"
+              rows="2"
+              placeholder="E.g., early check-in, airport pickup, anniversary setup..."
+              class="w-full bg-[#1e293b] border border-slate-700 rounded-md px-3 py-2 text-sm text-white focus:outline-none focus:border-[#c5a059]"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full btn-gold py-3 text-sm font-bold tracking-wider cursor-pointer"
+          >
+            <i class="fa-brands fa-whatsapp text-base"></i> Send Booking Inquiry on WhatsApp
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script>
+      // Initialize Dates for Booking Widget
+      document.addEventListener('DOMContentLoaded', () => {
+        const today = new Date();
+        const tomorrow = new Date(today);
+        tomorrow.setDate(tomorrow.getDate() + 1);
+
+        const formatDate = (date) => date.toISOString().split('T')[0];
+
+        const checkIn = document.getElementById('bookingCheckIn');
+        const checkOut = document.getElementById('bookingCheckOut');
+        const mCheckIn = document.getElementById('modalCheckIn');
+        const mCheckOut = document.getElementById('modalCheckOut');
+
+        if (checkIn && checkOut) {
+          checkIn.value = formatDate(today);
+          checkIn.min = formatDate(today);
+          checkOut.value = formatDate(tomorrow);
+          checkOut.min = formatDate(tomorrow);
+        }
+
+        if (mCheckIn && mCheckOut) {
+          mCheckIn.value = formatDate(today);
+          mCheckIn.min = formatDate(today);
+          mCheckOut.value = formatDate(tomorrow);
+          mCheckOut.min = formatDate(tomorrow);
+        }
+      });
+
+      // Mobile Menu Toggle
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            menuIcon.classList.remove('fa-bars');
+            menuIcon.classList.add('fa-xmark');
+          } else {
+            mobileMenu.classList.add('hidden');
+            menuIcon.classList.remove('fa-xmark');
+            menuIcon.classList.add('fa-bars');
+          }
+        });
+      }
+
+      // Hero Carousel Logic
+      let currentHeroSlide = 0;
+      const heroSlides = document.querySelectorAll('.hero-slide');
+      const heroDots = document.querySelectorAll('.slider-dot');
+      let heroInterval = setInterval(nextHeroSlide, 5000);
+
+      function showHeroSlide(index) {
+        heroSlides.forEach((slide, i) => {
+          if (i === index) {
+            slide.classList.remove('opacity-0', 'pointer-events-none');
+            slide.classList.add('opacity-100');
+          } else {
+            slide.classList.remove('opacity-100');
+            slide.classList.add('opacity-0', 'pointer-events-none');
+          }
+        });
+
+        heroDots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add('w-8', 'bg-[#c5a059]');
+            dot.classList.remove('w-3', 'bg-white/40');
+          } else {
+            dot.classList.remove('w-8', 'bg-[#c5a059]');
+            dot.classList.add('w-3', 'bg-white/40');
+          }
+        });
+        currentHeroSlide = index;
+      }
+
+      function nextHeroSlide() {
+        let nextIndex = (currentHeroSlide + 1) % heroSlides.length;
+        showHeroSlide(nextIndex);
+      }
+
+      function prevHeroSlide() {
+        let prevIndex = (currentHeroSlide - 1 + heroSlides.length) % heroSlides.length;
+        showHeroSlide(prevIndex);
+      }
+
+      function setHeroSlide(index) {
+        clearInterval(heroInterval);
+        showHeroSlide(index);
+        heroInterval = setInterval(nextHeroSlide, 5000);
+      }
+
+      // Rooms Scroll
+      function scrollRooms(direction) {
+        const container = document.getElementById('roomsContainer');
+        if (container) {
+          const scrollAmount = direction === 'left' ? -350 : 350;
+          container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+      }
+
+      // Accordion Toggle
+      function toggleAccordion(button) {
+        const item = button.closest('.custom-accordion-item');
+        const isActive = item.classList.contains('active');
+
+        // Close all other accordion items
+        document.querySelectorAll('.custom-accordion-item').forEach((acc) => {
+          acc.classList.remove('active');
+        });
+
+        // Toggle current
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      }
+
+      // Modal Open/Close
+      function openBookingModal(preferredRoom = '') {
+        const modal = document.getElementById('bookingModal');
+        if (modal) {
+          modal.classList.add('show');
+          if (preferredRoom) {
+            const roomSelect = document.getElementById('modalRoomType');
+            if (roomSelect) {
+              for (let option of roomSelect.options) {
+                if (option.value.includes(preferredRoom)) {
+                  option.selected = true;
+                  break;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      function closeBookingModal() {
+        const modal = document.getElementById('bookingModal');
+        if (modal) {
+          modal.classList.remove('show');
+        }
+      }
+
+      // Close modal on backdrop click
+      window.addEventListener('click', (e) => {
+        const modal = document.getElementById('bookingModal');
+        if (e.target === modal) {
+          closeBookingModal();
+        }
+      });
+
+      // Quick Booking Form Submit (WhatsApp redirect)
+      function handleQuickBooking(e) {
+        e.preventDefault();
+        const checkIn = document.getElementById('bookingCheckIn').value;
+        const checkOut = document.getElementById('bookingCheckOut').value;
+        const roomType = document.getElementById('bookingRoomType').value;
+        const guests = document.getElementById('bookingGuests').value;
+
+        // Auto open modal with these values preselected
+        openBookingModal(roomType);
+        const mCheckIn = document.getElementById('modalCheckIn');
+        const mCheckOut = document.getElementById('modalCheckOut');
+        const mGuests = document.getElementById('modalGuests');
+        if (mCheckIn) mCheckIn.value = checkIn;
+        if (mCheckOut) mCheckOut.value = checkOut;
+        if (mGuests) mGuests.value = guests;
+      }
+
+      // Modal Booking Submit to WhatsApp
+      function submitModalReservation(e) {
+        e.preventDefault();
+        const name = document.getElementById('modalGuestName').value;
+        const phone = document.getElementById('modalGuestPhone').value;
+        const checkIn = document.getElementById('modalCheckIn').value;
+        const checkOut = document.getElementById('modalCheckOut').value;
+        const roomType = document.getElementById('modalRoomType').value;
+        const guests = document.getElementById('modalGuests').value;
+        const notes = document.getElementById('modalNotes').value || 'None';
+
+        const message = `*Hotel Dayal Paradise - Room Reservation Inquiry*%0A%0A` +
+          `*Guest Name:* ${encodeURIComponent(name)}%0A` +
+          `*Phone:* ${encodeURIComponent(phone)}%0A` +
+          `*Check-In:* ${checkIn}%0A` +
+          `*Check-Out:* ${checkOut}%0A` +
+          `*Room Category:* ${encodeURIComponent(roomType)}%0A` +
+          `*Guests:* ${encodeURIComponent(guests)}%0A` +
+          `*Special Requests:* ${encodeURIComponent(notes)}`;
+
+        const whatsappUrl = `https://wa.me/918795838030?text=${message}`;
+        window.open(whatsappUrl, '_blank');
+        closeBookingModal();
+      }
+    </script>
   </body>
 </html>

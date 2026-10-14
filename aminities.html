@@ -3,440 +3,346 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>aminities</title>
+    <title>Hotel Amenities & Facilities | Hotel Dayal Paradise Lucknow</title>
+    <meta
+      name="description"
+      content="Discover the 4-star luxury amenities at Hotel Dayal Paradise Lucknow: High-speed Wi-Fi, fitness center, valet parking, multi-cuisine dining, business center, and 24/7 concierge."
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS Browser CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.2.0/css/all.min.css"
-      integrity="sha512-nMJjQudb6RMMr08oY6YSfNlEWl1l8XWuoOwNvtWXrrgVs8MCR8AZBB1tEAO+ogiI93gXtG1XPmg+bAP5DochSA=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <style>
-      .card {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        z-index: 1;
-      }
-      .box {
-        height: 50px;
-        width: 50px;
-        /* background-color: red; */
-        transition: 0.5s ease;
-        position: absolute;
-        z-index: -1;
-      }
-      .card:hover .box {
-        transform: rotate(360deg);
-        background:
-          linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-          url(./images/hover-bg.jpg);
-        background-position: center;
-        background-size: cover;
 
-        height: 100%;
-        width: 100%;
-      }
-    </style>
+    <!-- Custom Luxury Design System -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <!-- top nav start -->
-    <div class="grid grid-cols-12 bg-blue-950 text-white text-sm">
-      <div
-        class="col-span-2 col-start-2 flex items-center justify-center gap-2 text-end my-4"
-      >
-        <i class="fa-solid fa-phone"></i> +91 8795838030
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#d4af37] selection:text-[#070c18]">
+    <!-- TOP NOTIFICATION & CONTACT BAR -->
+    <header class="royal-topbar text-xs text-slate-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-wrap items-center justify-between gap-3">
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+          <a href="tel:+918795838030" class="topbar-link">
+            <i class="fa-solid fa-phone text-xs"></i>
+            <span class="font-medium">+91 8795838030</span>
+          </a>
+          <a href="https://maps.google.com/?q=Hotel+Dayal+Paradise+Gomti+Nagar+Lucknow" target="_blank" class="hidden md:flex topbar-link">
+            <i class="fa-solid fa-location-dot text-xs"></i>
+            <span>Vipul Khand-V, Gomti Nagar, Lucknow</span>
+          </a>
+          <a href="mailto:reservation@dayalparadise.com" class="hidden sm:flex topbar-link">
+            <i class="fa-solid fa-envelope text-xs"></i>
+            <span>reservation@dayalparadise.com</span>
+          </a>
+        </div>
+        <div class="flex items-center gap-4 ml-auto">
+          <a href="./index.html#rooms" class="btn-royal-stay">
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Your Stay</span>
+          </a>
+        </div>
       </div>
-      <div class="col-span-3 text-start gap-2 my-4">
-        <i class="fa-solid fa-location-dot"></i> Vipul Khand-V,Gomti Nagar,
-        Lucknow
-      </div>
-      <div class="col-span-2 gap-2 my-4">
-        <i class="fa-solid fa-envelope"></i> reservation@dayalparadise.com
-      </div>
-      <div class="col-span-3 text-center my-4 col-start-9">
-        <a href="#" class="bg-sky-100 text-blue-950 px-3 py-1"
-          >BOOK YOUR ROOM</a
-        >
-      </div>
-    </div>
-    <!-- top nav end -->
+    </header>
 
-    <!-- mid nav start  -->
-    <div class="grid grid-cols-12 sticky top-0 z-50 bg-slate-50">
-      <div class="col-span-12">
-        <nav class="bg-neutral-primary w-full z-20 top-0 start-0">
-          <div
-            class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-          >
-            <a
-              href="https://flowbite.com/"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-              <img src="./images/logo.png" class="h-15" alt="Flowbite Logo" />
-            </a>
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <svg
-                class="w-6 h-6"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-width="2"
-                  d="M5 7h14M5 12h14M5 17h14"
-                />
-              </svg>
-            </button>
-            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-              <ul
-                class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-neutral-primary"
-              >
-                <li>
-                  <a
-                    href="./index.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Home</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./aboutus.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >about us</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >suite & rooms</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./dining.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >Dining</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./b&l.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >banquets and lawn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="./gallery.html"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >gallery</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="hover:text-lime-400 block py-2 px-3 uppercase text-xl font-semibold bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0"
-                    aria-current="page"
-                    >contact us</a
-                  >
-                </li>
-              </ul>
+    <!-- STICKY LUXURY NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 luxury-navbar shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20">
+          <!-- Royal Hotel Logo Badge -->
+          <a href="./index.html" class="royal-logo-badge group" title="Hotel Dayal Paradise">
+            <img src="./images/logo.png" alt="Hotel Dayal Paradise Logo" />
+          </a>
+
+          <!-- Navigation Links -->
+          <div class="hidden lg:flex items-center space-x-1 xl:space-x-1.5">
+            <a href="./index.html" class="luxury-nav-link">Home</a>
+            <a href="./aboutus.html" class="luxury-nav-link">About Us</a>
+            <a href="./index.html#rooms" class="luxury-nav-link">Suites & Rooms</a>
+            <a href="./dining.html" class="luxury-nav-link">Dining</a>
+            <a href="./b&l.html" class="luxury-nav-link">Banquets & Lawn</a>
+            <a href="./aminities.html" class="luxury-nav-link active">Amenities</a>
+            <a href="./gallery.html" class="luxury-nav-link">Gallery</a>
+            <a href="./index.html#contact" class="luxury-nav-link">Contact</a>
+          </div>
+
+          <!-- Guest Care Concierge -->
+          <div class="hidden xl:flex items-center pl-3">
+            <div class="royal-concierge-pill">
+              <div class="concierge-icon-circle">
+                <i class="fa-solid fa-bell-concierge"></i>
+              </div>
+              <div>
+                <p class="text-[9px] uppercase tracking-[0.18em] text-[#dfc07b] font-bold leading-none mb-1">Guest Care</p>
+                <a href="tel:+918795838030" class="text-xs font-bold text-white hover:text-[#fae9bd] transition-colors leading-none tracking-wide">
+                  +91 8795838030
+                </a>
+              </div>
             </div>
           </div>
-        </nav>
-      </div>
-    </div>
-    <!-- mid nav end  -->
 
-    <!-- image section start -->
-    <div
-      class="grid grid-cols-12 bg-[url('./images/aminities.jpg')] w-full h-[200px] bg-cover bg-center bg-no-repeat"
-    >
-      <h1 class="text-white text-5xl absolute ml-40 mt-15">
-        Hotel amenities
-        <span class="inline-block w-12 border-b-2 border-lime-500"></span>
-      </h1>
-    </div>
-    <div class="grid grid-cols-12 shadow-lg py-5">
-      <div class="col-start-2 col-span-4 text-black flex items-center">
-        <a href="#">HOME</a>
-        <h1 class="ml-2">&gt; HOTEL AMENITIES</h1>
-      </div>
-    </div>
-    <!-- image section end -->
-
-    <!-- content section start -->
-    <div class="grid grid-cols-12">
-      <div class="col-span-10 col-start-2 mt-20">
-        <h1 class="text-3xl">Hotel amenities</h1>
-        <p class="mt-1">
-          Dayal Paradise amenities
-          <span class="inline-block w-16 border-b-3 border-lime-500"></span>
-        </p>
-        <p class="mt-10">
-          Hotel is well equipped with all the features a 4 star hotel should
-          possess. Considering the Comfort, Class, Luxury and Serenity of our
-          gusts we have tried to provide every possible amenity.
-        </p>
-      </div>
-    </div>
-    <!-- content section end -->
-
-    <!-- card section start -->
-    <div class="grid grid-cols-12 bg-gray-100 py-16">
-      <!-- Main Container -->
-      <div class="col-span-10 col-start-2">
-        <!-- Cards Grid -->
-        <div class="grid grid-cols-12 gap-8">
-          <!-- Card 1 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8 card">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">ADAAB</h1>
-            <div class="box"></div>
-            <p class="text-gray-500 text-lg">
-              ADAAB, A Multi Cuisine <br />
-              Restaurant.
-            </p>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">JANNAT</h1>
-
-            <p class="text-gray-500 text-lg">
-              JANNAT, A Roof top & Pool Side <br />
-              Restro-Bar.
-            </p>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Beds</h1>
-
-            <p class="text-gray-500 text-lg">Choice of Queen or twin bed.</p>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Boardroom</h1>
-
-            <p class="text-gray-500 text-lg">
-              A board room is available at <br />
-              Dayal Paradise.
-            </p>
-          </div>
-
-          <!-- card 5 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Banquet Hall</h1>
-
-            <p class="text-gray-500 text-lg">
-              Banquet Hall is there at Dayal Paradise for our guests.
-            </p>
-          </div>
-          <!--card 6  -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Lawn</h1>
-
-            <p class="text-gray-500 text-lg">
-              A well maintained lawn is provided for our guests.
-            </p>
-          </div>
-
-          <!-- card 7-->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Fitness Center</h1>
-
-            <p class="text-gray-500 text-lg">
-              No compromise with health,so we have health center.
-            </p>
-          </div>
-
-          <!-- card 8 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Business Center</h1>
-
-            <p class="text-gray-500 text-lg">
-              Business Center here helps <br />
-              you to run your business.
-            </p>
-          </div>
-
-          <!-- card 9 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">High Speed Internet</h1>
-
-            <p class="text-gray-500 text-lg">
-              Here we provide our guests a high speed internet.
-            </p>
-          </div>
-
-          <!-- card 10 -->
-          <div class="col-span-3 bg-white h-[300px] text-center p-8">
-            <img
-              src="./images/aminitiescard.png"
-              class="w-16 mx-auto mb-5"
-              alt=""
-            />
-
-            <h1 class="text-2xl italic mb-3">Ample parking space</h1>
-
-            <p class="text-gray-500 text-lg">
-              Ample parking space is <br />
-              provided at Dayal Paradise.
-            </p>
-          </div>
+          <!-- Mobile Hamburger Button -->
+          <button id="mobileMenuToggle" type="button" class="lg:hidden p-2.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors focus:outline-none" aria-label="Toggle menu">
+            <i id="menuIcon" class="fa-solid fa-bars text-xl text-[#d4af37]"></i>
+          </button>
         </div>
       </div>
-    </div>
-    <!-- card section end -->
 
-    <!-- footer sectin start -->
-    <footer class="bg-[#1f1f1f] text-gray-400">
-      <div class="grid grid-cols-12 max-w-7xl mx-auto py-16 gap-8">
-        <!-- LOGO -->
-        <div class="col-span-4">
-          <img src="./images/footerlogo.png" class="w-80" alt="Logo" />
-
-          <p class="mt-5">Comfort | Serenity | Luxury | Greenery</p>
-
-          <!-- social icons -->
-          <div class="flex gap-6 mt-16">
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-facebook"></i>
-          </div>
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobileMenu" class="hidden lg:hidden mobile-nav-drawer px-4 pt-3 pb-6 space-y-1.5">
+        <a href="./index.html" class="mobile-nav-link">Home</a>
+        <a href="./aboutus.html" class="mobile-nav-link">About Us</a>
+        <a href="./index.html#rooms" class="mobile-nav-link">Suites & Rooms</a>
+        <a href="./dining.html" class="mobile-nav-link">Dining</a>
+        <a href="./b&l.html" class="mobile-nav-link">Banquets & Lawn</a>
+        <a href="./aminities.html" class="mobile-nav-link active">Amenities</a>
+        <a href="./gallery.html" class="mobile-nav-link">Gallery</a>
+        <a href="./index.html#contact" class="mobile-nav-link">Contact</a>
+        <div class="pt-3 border-t border-[#d4af37]/20 mt-2">
+          <a href="./index.html#rooms" class="btn-royal-stay w-full justify-center py-2.5 text-xs">
+            <i class="fa-solid fa-crown text-[10px]"></i>
+            <span>Book Your Stay</span>
+          </a>
         </div>
+      </div>
+    </nav>
 
-        <!-- EXPLORE -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">EXPLORE</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Suite & Rooms</p>
-          <p class="mb-4">Banquets & Lawn</p>
-          <p class="mb-4">Amenities</p>
-          <p class="mb-4">Gallery</p>
-          <p>Careers</p>
+    <!-- INNER HERO BANNER -->
+    <section class="relative bg-[url('./images/aminities.jpg')] bg-cover bg-center h-[280px] sm:h-[340px] flex items-center justify-center text-white">
+      <div class="absolute inset-0 bg-gradient-to-t from-[#070b19] via-[#070b19]/75 to-[#070b19]/50"></div>
+      <div class="relative z-10 text-center px-4 max-w-4xl">
+        <span class="text-[#e5c583] text-xs sm:text-sm font-semibold uppercase tracking-[0.25em]">4-Star Hospitality</span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-bold mt-2 text-white">Hotel Amenities & Services</h1>
+        <div class="gold-divider-center my-3"></div>
+        <div class="flex items-center justify-center gap-2 text-xs uppercase tracking-wider text-slate-300">
+          <a href="./index.html" class="hover:text-[#c5a059]">Home</a>
+          <span>/</span>
+          <span class="text-[#c5a059]">Amenities</span>
         </div>
+      </div>
+    </section>
 
-        <!-- QUICK LINKS -->
-        <div class="col-span-2">
-          <h2 class="text-white text-xl italic font-semibold">QUICK LINKS</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-4">Packages</p>
-          <p class="mb-4">Conference</p>
-          <p class="mb-4">About Us</p>
-          <p class="mb-4">Terms & Conditions</p>
-          <p class="mb-4">Privacy Policy</p>
-          <p class="mb-4">Cancellation Policy</p>
-          <p>Disclaimer</p>
-        </div>
-
-        <!-- CONTACT -->
-        <div class="col-span-4">
-          <h2 class="text-white text-xl italic font-semibold">CONTACT US</h2>
-
-          <div class="w-12 border-b-3 border-lime-600 mt-3 mb-8"></div>
-
-          <p class="mb-6">
-            📍 HOTEL DAYAL PARADISE <br />
-            Vipul Khand - V, Gomti Nagar, Lucknow
+    <!-- AMENITIES INTRO -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center mb-16">
+          <span class="text-[#c5a059] text-xs sm:text-sm font-semibold uppercase tracking-[0.2em]">Designed for Comfort</span>
+          <h2 class="font-heading text-3xl sm:text-4xl text-[#0a1128] font-bold mt-2">
+            Every Convenience at Your Fingertips
+          </h2>
+          <div class="gold-divider-center my-3"></div>
+          <p class="text-slate-600 leading-relaxed font-light text-base sm:text-lg">
+            Equipped with all the features a premier 4-star destination should possess. Considering the comfort, class, luxury, and serenity of our guests, we have thoughtfully curated every amenity to ensure an effortless, rewarding stay.
           </p>
+        </div>
 
-          <p class="mb-6">📞 +91 8795838030</p>
+        <!-- 10 DISTINCT LUXURY AMENITIES CARDS -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <!-- Card 1: Aadab -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Aadab Restaurant</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              60-cover multi-cuisine dining serving authentic Awadhi and continental delicacies.
+            </p>
+          </div>
 
-          <p>✉ Reservation@Dayalparadise.Com</p>
+          <!-- Card 2: Jannat -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-martini-glass"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Jannat Rooftop</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Open-air rooftop restro-bar overlooking the mesmerizing Gomti Nagar skyline.
+            </p>
+          </div>
+
+          <!-- Card 3: Beds -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-bed"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Plush Bedding</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Choice of custom Queen bed or Twin beds with high-thread-count luxury linens.
+            </p>
+          </div>
+
+          <!-- Card 4: Boardroom -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Executive Boardroom</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Modern meeting room equipped with projector, high-speed Wi-Fi, and conferencing tools.
+            </p>
+          </div>
+
+          <!-- Card 5: Banquet Hall -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Grand Banquets</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Jalsa & Jashn banquet halls hosting up to 500 guests for royal celebrations.
+            </p>
+          </div>
+
+          <!-- Card 6: Lawn -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-tree"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Lush Green Lawn</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Sprawling open lawn with permanent mandap stage accommodating 1,000+ guests.
+            </p>
+          </div>
+
+          <!-- Card 7: Fitness Center -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-dumbbell"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Fitness Center</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Well-equipped gym with treadmills, free weights, and cardio machines for guests.
+            </p>
+          </div>
+
+          <!-- Card 8: Business Center -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Business Center</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Secretarial assistance, high-speed printing, and workstations for corporate guests.
+            </p>
+          </div>
+
+          <!-- Card 9: High-Speed Internet -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">High-Speed Wi-Fi</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Complimentary optical-fiber Wi-Fi throughout all rooms and public hotel areas.
+            </p>
+          </div>
+
+          <!-- Card 10: Ample Parking -->
+          <div class="bg-slate-50 border border-slate-200 rounded-xl p-6 text-center hover:border-[#c5a059] hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 rounded-full bg-[#c5a059]/10 border border-[#c5a059]/30 text-[#c5a059] flex items-center justify-center mx-auto mb-4 text-2xl">
+              <i class="fa-solid fa-square-parking"></i>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-[#0a1128] mb-2">Valet Parking</h3>
+            <p class="text-slate-500 text-xs leading-relaxed">
+              Spacious and secure on-site parking with dedicated valet attendants 24/7.
+            </p>
+          </div>
         </div>
       </div>
-      <!-- Bottom Footer -->
-      <div class="border-t border-gray-700 mx-16 mt-10">
-        <p class="text-gray-500 py-8">
-          © Hotel Dayal Paradise. All rights reserved.
-        </p>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="bg-[#070b19] text-slate-400 border-t border-[#c5a059]/20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10">
+          <div class="lg:col-span-4">
+            <a href="./index.html" class="inline-block mb-4">
+              <img src="./images/footerlogo.png" class="w-64 sm:w-72 object-contain" alt="Hotel Dayal Paradise Logo" />
+            </a>
+            <p class="text-sm text-[#e5c583] font-medium tracking-wide mb-4">Comfort | Serenity | Luxury | Greenery</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-6 font-light max-w-sm">
+              Hotel Dayal Paradise is Lucknow's premier 4-star address in Gomti Nagar, renowned for Awadhi culinary excellence and personalized care.
+            </p>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">EXPLORE</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./index.html#rooms" class="hover:text-[#c5a059]">Suite & Rooms</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059]">Banquets & Lawn</a></li>
+              <li><a href="./dining.html" class="hover:text-[#c5a059]">Dining & Bar</a></li>
+              <li><a href="./gallery.html" class="hover:text-[#c5a059]">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-2">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">QUICK LINKS</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-2.5 text-xs sm:text-sm">
+              <li><a href="./aboutus.html" class="hover:text-[#c5a059]">About Us</a></li>
+              <li><a href="./b&l.html" class="hover:text-[#c5a059]">Wedding Packages</a></li>
+              <li><a href="#" class="hover:text-[#c5a059]">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="lg:col-span-4">
+            <h3 class="text-white text-base font-heading font-semibold mb-3">CONTACT US</h3>
+            <div class="w-8 border-b-2 border-[#c5a059] mb-4"></div>
+            <ul class="space-y-3 text-xs sm:text-sm">
+              <li class="flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-[#c5a059] mt-1 text-sm"></i>
+                <span><strong>HOTEL DAYAL PARADISE</strong><br />Vipul Khand - V, Gomti Nagar, Lucknow</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-phone text-[#c5a059] text-sm"></i>
+                <a href="tel:+918795838030" class="hover:text-[#c5a059]">+91 8795838030</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-8 border-t border-slate-800 text-center text-xs text-slate-500">
+          <p>© 2026 Hotel Dayal Paradise Lucknow. All rights reserved.</p>
+        </div>
       </div>
     </footer>
-    <!-- footer sectin end -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-element-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+    <!-- Floating Actions -->
+    <div class="floating-actions">
+      <a href="https://wa.me/918795838030" target="_blank" class="fab-btn fab-whatsapp" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="tel:+918795838030" class="fab-btn fab-phone" aria-label="Call">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+
+    <script>
+      const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const menuIcon = document.getElementById('menuIcon');
+
+      if (mobileMenuToggle && mobileMenu) {
+        mobileMenuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          menuIcon.classList.toggle('fa-bars');
+          menuIcon.classList.toggle('fa-xmark');
+        });
+      }
+    </script>
   </body>
 </html>
